@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --cor-fundo-claro: #fAf9f7;
+  --cor-texto: #625d52;
+  --cor-texto-escuro: #27241d;
+  --cor-primaria: #ffe013;
+  --cor-primaria-escuro: #f9b502;
+  --cor-secundaria: #3068ed;
+  --cor-secundaria-escuro: #483bd8;
+  --cor-ativo: #42a64b;
+
+  --ff-titulo: 'Titillium Web', serif;
+  --ff-sans: 'Cabin', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--ff-sans);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*tipografia*/
+h1, h2, h3, h4, h5 {
+  font-family: var(--ff-titulo);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.25;
+}
+
+.titulo {
+  color: var(--cor-texto-escuro);
+  font-size: 2.25rem;
+}
+
+.texto {
+  color: var(--cor-texto);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.fundo-escuro {
+  color: #fff;
+}
+
+/*botoes*/
+
+.botao {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--ff-sans);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 0.625rem 2rem;
+  text-decoration: none;
+
+}
+
+.botao--primario {
+  color: var(--cor-texto-escuro);
+  background-image: linear-gradient( 86deg, var(--cor-primaria), var(--cor-primaria-escuro) );
+}
+
+.botao--secundario {
+  color: #fff;
+  background-image: linear-gradient( 86deg, var(--cor-secundaria), var(--cor-secundaria-escuro) );
+}
+
+.botao--primario:hover, .botao--secundario:hover {
+  opacity: .8;
+}
