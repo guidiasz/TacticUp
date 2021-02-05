@@ -1,0 +1,20 @@
+.beneficios {
+  background-color: var(--cor-secundaria-escuro);
+}
+
+.beneficios__titulo {
+  color: #fff;
+}
+
+.beneficios__cards {
+  margin-top: 40px;
+}
+
+.beneficios__card {
+  background-color: var(--cor-secundaria);
+  border-radius: 5px;
+}
+
+.beneficios__card .texto {
+  color: #fff;
+}

@@ -1,3 +1,15 @@
 .banner-inicial {
   padding-top: 5rem;
+  min-height: calc(100vh - 82px);
+  background-color: var(--cor-texto-escuro);
+}
+
+.banner-inicial__titulo {
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.banner-inicial__subtitulo {
+  color: #fff;
 }

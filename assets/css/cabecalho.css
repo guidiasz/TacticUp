@@ -2,6 +2,7 @@
   width: 100%;
   position: absolute;
   top: 0;
+  background-color: rgba(0,0,0,0.15);
 }
 
 .cabecalho__container {
@@ -32,7 +33,7 @@
 
 .cabecalho__hamburger div {
   display: block;
-  border: solid 1px var(--cor-texto);
+  border: solid 1px #fff;
   width: 1.75rem;   
 }
 
@@ -78,6 +79,7 @@
   display: flex;
   align-items: center;
   padding: .5rem .875rem;
+  margin-top: 0;
 }
 
 .cabecalho__botao svg{
