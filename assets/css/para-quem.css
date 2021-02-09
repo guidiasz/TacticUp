@@ -1,3 +1,7 @@
+.para-quem {
+  background-color: var(--cor-fundo-claro);
+}
+
 .para-quem__botoes {
   margin-top: 2.5rem;
 }

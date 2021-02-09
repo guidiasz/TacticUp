@@ -1,0 +1,11 @@
+.tutorial {
+  background-color: var(--cor-fundo-claro);
+}
+
+.tutorial__botoes, .tutorial__lista, .tutorial__video {
+  margin-top: 2.5rem;
+}
+
+.tutorial__video{
+  margin-bottom: 1.5rem;
+}

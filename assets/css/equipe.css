@@ -1,0 +1,11 @@
+.equipe {
+  background: var(--cor-fundo-claro);
+}
+
+.equipe__colaboradores {
+  margin-top: 2.25rem;
+}
+
+.equipe__colaborador + .equipe__colaborador{
+  margin-top: 1.75rem;
+}

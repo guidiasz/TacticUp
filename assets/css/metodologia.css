@@ -1,0 +1,17 @@
+.metodologia {
+  background: var(--cor-fundo-claro);
+}
+
+.metodologia__subtitulo {
+  margin-top: 2rem;
+}
+
+.metodologia__principios {
+  margin-top: 1.125rem;
+}
+
+.metodologia__texto.primeiro {
+  display: none;
+  margin-top: 1.5rem;
+}
+

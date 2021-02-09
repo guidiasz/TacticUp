@@ -1,3 +1,35 @@
 .rodape {
   background-color: var(--cor-texto-escuro);
 }
+
+.rodape__nav {
+  padding-top: 2.5rem;
+}
+.rodape__titulo {
+  color: rgba(255,255, 255,.6);
+}
+
+.rodape__texto, .rodape__link {
+  color: white;
+}
+
+.rodape__link {
+  text-decoration: none;
+  display: block;
+  font-family: var(--ff-titulo);
+}
+.rodape .rodape__link.primeiro {
+  margin-top: 1rem;
+}
+.rodape .rodape__link + .rodape__link {
+  margin-top: .5rem;
+}
+
+.rodape i {
+  display: block;
+  margin-top: 2.75rem;
+}
+
+i + .rodape__texto {
+  margin-top: 1.125rem;
+}

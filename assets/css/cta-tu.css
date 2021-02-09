@@ -1,0 +1,12 @@
+.cta-tu {
+  background-color: var(--cor-texto-escuro);
+}
+
+.cta-tu__titulo {
+  color: #fff;
+}
+
+.cta-tu__subtitulo {
+  color: #fff;
+  margin-top: 2rem;
+}

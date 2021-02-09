@@ -23,15 +23,22 @@ html {
   font-family: var(--ff-sans);
 }
 
+video, img, i {
+  border: solid 1px var(--cor-texto);
+}
+
 img {
   display: block;
   max-width: 100%;
 }
 
 .container {
-  padding: 0 1rem;
+  padding: 0 1rem 2rem 1rem;
 }
 
+.wrapper {
+  text-align: center;
+}
 /*tipografia*/
 h1, h2, h3, h4, h5 {
   font-family: var(--ff-titulo);
@@ -59,6 +66,11 @@ h1 {
 
 .texto+.texto {
   margin-top: 1.125rem;
+}
+
+.maiusculo {
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
 }
 
 /*botoes*/
