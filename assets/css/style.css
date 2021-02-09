@@ -23,10 +23,6 @@ html {
   font-family: var(--ff-sans);
 }
 
-video, img, i {
-  border: solid 1px var(--cor-texto);
-}
-
 img {
   display: block;
   max-width: 100%;

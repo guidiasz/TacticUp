@@ -1,7 +1,12 @@
 .banner-inicial {
   padding-top: 5rem;
   min-height: calc(100vh - 82px);
-  background-color: var(--cor-texto-escuro);
+  background-color: var(--cor-secundaria);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)), url('../img/banner-inicial.jpg');
+  background-position: 67% bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner-inicial__titulo {
