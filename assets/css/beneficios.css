@@ -18,3 +18,30 @@
 .beneficios__card .texto {
   color: #fff;
 }
+
+.beneficios__icone {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-size: contain;
+}
+
+.beneficios__icone--card-1 {
+  background-image: url(../img/beneficios/beneficio-1.svg);
+}
+
+.beneficios__icone--card-2 {
+  background-image: url(../img/beneficios/beneficio-2.svg);
+}
+
+.beneficios__icone--card-3 {
+  background-image: url(../img/beneficios/beneficio-3.svg);
+}
+
+.beneficios__icone--card-4 {
+  background-image: url(../img/beneficios/beneficio-4.svg);
+}
+
+.beneficios__icone--card-5 {
+  background-image: url(../img/beneficios/beneficio-5.svg);
+}

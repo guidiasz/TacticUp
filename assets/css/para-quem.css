@@ -5,3 +5,30 @@
 .para-quem__botoes {
   margin-top: 2.5rem;
 }
+
+.para-quem__ilustracao{
+  border-radius: 5px;
+  display: block;
+  height: calc( (100vw - 32px) * 0.66463 ); 
+  background-size: contain;
+}
+
+.para-quem__ilustracao--jogadores {
+  background-image: url(../img/jogadores.jpg);
+}
+
+.para-quem__ilustracao--escolas {
+  background-image: url(../img/escolas.jpg);
+}
+
+.para-quem__ilustracao--treinadores {
+  background-image: url(../img/treinadores.jpg);
+}
+
+.para-quem__ilustracao--analistas {
+  background-image: url(../img/analistas.jpg);
+}
+
+.para-quem__ilustracao--direcao {
+  background-image: url(../img/direcao.jpg);
+}
