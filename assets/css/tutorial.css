@@ -6,6 +6,39 @@
   margin-top: 2.5rem;
 }
 
+.tutorial__icone {
+  height: 56px;
+  width: 56px;
+}
+
+.tutorial__icone--1 {
+  background-image: url(../img/tutorial/icone-tutorial-jogador-1.svg);
+}
+
+.tutorial__icone--2 {
+  background-image: url(../img/tutorial/icone-tutorial-jogador-2.svg);
+}
+
+.tutorial__icone--3 {
+  background-image: url(../img/tutorial/icone-tutorial-jogador-3.svg);
+}
+
+.tutorial__icone--4 {
+  background-image: url(../img/tutorial/icone-tutorial-jogador-4.svg);
+}
+
+.tutorial__icone--5 {
+  background-image: url(../img/tutorial/icone-tutorial-jogador-5.svg);
+}
+
+.tutorial__icone--6 {
+  background-image: url(../img/tutorial/icone-tutorial-jogador-6.svg);
+}
+
+.tutorial__icone--7 {
+  background-image: url(../img/tutorial/icone-tutorial-jogador-7.svg);
+}
+
 .tutorial__video{
   margin-bottom: 1.5rem;
 }

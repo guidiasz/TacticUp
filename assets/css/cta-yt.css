@@ -1,7 +1,23 @@
+.cta-yt {
+  text-align: center;
+}
+
+.cta-yt__titulo {
+  text-align: left;
+}
+
 .cta-yt video {
   margin-top: 2.5rem;
+}
+
+.cta-yt__logo {
+  background-image: url(../img/logo-tacticUP-colorida-larga.svg);
+  height: 61.26px;
+  margin: 0 auto;
+  width: 185px;
 }
 
 .cta-yt__texto {
   margin-top: 1.5rem;
 }
+

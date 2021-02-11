@@ -1,0 +1,57 @@
+.nav-mobile {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.nav-mobile__menu {
+  display: flex;
+}
+
+.nav-mobile__link {
+  font-size: .75rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 72px;
+  height: 64px;
+  text-align: center;
+}
+
+.nav-mobile__link.primeiro {
+  width: 56px;
+}
+
+.nav-mobile__link span {
+  margin-top: .25rem;
+}
+
+.nav-mobile__icone {
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+.nav-mobile__icone--1 {
+background-image: url(../img/logo-tacticUP-mini.svg);
+}
+
+.nav-mobile__icone--2 {
+  background-image: url(../img/nav-mobile/sobre.svg);
+}
+
+.nav-mobile__icone--3 {
+  background-image: url(../img/nav-mobile/para-quem.svg);
+}
+
+.nav-mobile__icone--4 {
+  background-image: url(../img/nav-mobile/beneficios.svg);
+}
+
+.nav-mobile__icone--5 {
+  background-image: url(../img/nav-mobile/como-usar.svg);
+}

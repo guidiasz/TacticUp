@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/cabecalho.css">
+  <link rel="stylesheet" href="/assets/css/nav-mobile.css">
   <link rel="stylesheet" href="/assets/css/banner-inicial.css">
   <link rel="stylesheet" href="/assets/css/sobre.css">
   <link rel="stylesheet" href="/assets/css/para-quem.css">
@@ -28,7 +29,7 @@
         <div></div>
       </a>
       <a href="/">
-        <span class="cabecalho__logo">TacticUP</span>
+        <span class="cabecalho__logo icone">TacticUP</span>
       </a>
       <nav class="cabecalho__menu">
         <ul class="cabecalho__itens">
@@ -52,12 +53,44 @@
       </div> 
     </div>
   </header>
+  <nav class="nav-mobile">
+      <ul class="nav-mobile__menu">
+        <li>
+          <a href="/" class="nav-mobile__link primeiro texto">
+            <i class="nav-mobile__icone icone nav-mobile__icone--1"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#sobre" class="nav-mobile__link texto">
+            <i class="nav-mobile__icone  icone nav-mobile__icone--2"></i>
+            <span>Sobre</span>
+          </a>
+        </li>
+        <li>
+          <a href="#para-quem" class="nav-mobile__link texto">
+            <i class="nav-mobile__icone  icone nav-mobile__icone--3"></i>
+            <span>Para quem</span>
+          </a>
+        </li>
+        <li>
+          <a href="#beneficios" class="nav-mobile__link texto">
+            <i class="nav-mobile__icone  icone nav-mobile__icone--4"></i>
+            <span>Benefícios</span>
+          </a>
+        </li>
+        <li>
+          <a href="#como-usar" class="nav-mobile__link texto">
+            <i class="nav-mobile__icone icone nav-mobile__icone--5"></i>
+            <span>Como usar</span>
+          </a>
+        </li>
+      </ul>
+  </nav>
   <main>
     <section class="banner-inicial container">
       <h1 class="banner-inicial__titulo">A plataforma dos campeões</h1>
       <p class="banner-inicial__subtitulo texto">Plataforma de avaliação da capacidade de leitura de jogo e tomada de decisão do jogador de futebol</p>
-      <a class="banner-inicial__botao botao botao--primario" href="https://login.tacticup.com.br/">Experimente grátis</a>
-      
+      <a class="banner-inicial__botao botao botao--primario" href="https://login.tacticup.com.br/">Experimente grátis</a>    
     </section>
   
     <section class="parceiros container">
@@ -78,11 +111,26 @@
     <section class="para-quem container">
       <h2 class="para-quem__titulo titulo">Para quem é esta plataforma?</h2>
       <div class="para-quem__botoes">
-        <button>Jogadores de futebol</button>
-        <button>Escolas de futebol</button>
-        <button>Treinadores</button>
-        <button>Analistas de desempenho</button>
-        <button>Direção técnica</button>
+        <button class="para-quem__botao">
+          <i class="para-quem__icone icone para-quem__icone--jogadores"></i>
+          <span>Jogadores de futebol</span>
+        </button>
+        <button class="para-quem__botao">
+          <i class="para-quem__icone icone para-quem__icone--escolas"></i>
+          Escolas de futebol
+        </button>
+        <button class="para-quem__botao">
+          <i class="para-quem__icone icone para-quem__icone--treinadores"></i>
+          Treinadores
+        </button>
+        <button class="para-quem__botao">
+          <i class="para-quem__icone icone para-quem__icone--analistas"></i>
+          Analistas de desempenho
+        </button>
+        <button class="para-quem__botao">
+          <i class="para-quem__icone icone para-quem__icone--direcao"></i>
+          Direção técnica
+        </button>
       </div>
       <div class="para-quem__item">
         <i class="para-quem__ilustracao para-quem__ilustracao--jogadores"></i>
@@ -121,27 +169,27 @@
       <h2 class="beneficios__titulo titulo">Benefícios</h2>
       <div class="beneficios__cards">
         <div class="beneficios__card">
-          <i class="beneficios__icone beneficios__icone--card-1"></i>
+          <i class="beneficios__icone icone  beneficios__icone--card-1"></i>
           <p class="texto">Tenha dados sobre a  leitura de jogo e tomada de decisão cientificamente comprovados</p>
         </div>
         
         <div class="beneficios__card">
-          <i class="beneficios__icone beneficios__icone--card-2"></i>
+          <i class="beneficios__icone icone  beneficios__icone--card-2"></i>
           <p class="texto">Monitore a evolução de cada jogador e o impacto de seu desempenho no grupo</p>
         </div>
         
         <div class="beneficios__card">
-          <i class="beneficios__icone beneficios__icone--card-3"></i>
+          <i class="beneficios__icone icone  beneficios__icone--card-3"></i>
           <p class="texto">Encontre os pontos fracos de cada atleta e elabore treinos personalizados</p>
         </div>
         
         <div class="beneficios__card">
-          <i class="beneficios__icone beneficios__icone--card-4"></i>
+          <i class="beneficios__icone icone  beneficios__icone--card-4"></i>
           <p class="texto">Avalie o resultado de um jogador ou de um grupo de jogadores</p>
         </div>
 
         <div class="beneficios__card">
-          <i class="beneficios__icone beneficios__icone--card-5"></i>
+          <i class="beneficios__icone icone  beneficios__icone--card-5"></i>
           <p class="texto">Tenha acesso imediato aos relatórios após a realização dos testes</p>
         </div>
       </div>
@@ -150,13 +198,11 @@
     </section>
   
     <section class="cta-yt container">
-      <h2 class="titulo">Sucesso comprovado por quem usa</h2>
+      <h2 class="cta-yt__titulo titulo">Sucesso comprovado por quem usa</h2>
       <video src=""></video>
-      <i></i>
+      <i class="cta-yt__logo icone"></i>
       <p class="cta-yt__texto texto">Assista às entrevistas de diversos profissionais do futebol que já utilizam a ferramenta e veja como eles têm se beneficiado.</p>
-      <div class="wrapper">
-        <a class="botao botao--secundario" href="#">Palestras gratuitas</a>
-      </div>
+      <a class="botao botao--secundario" href="#">Palestras gratuitas</a>
     </section>
   
     <section class="tutorial container">
@@ -168,19 +214,50 @@
   
       <ul class="tutorial__lista">
         <li class="tutorial__item">
-          <i></i>
-          <p class="texto">Cadastre-se na plataforma</p>
+          <i class="tutorial__icone icone  tutorial__icone--1"></i>
+          <p class="texto">Cadastre-se gratuitamente na plataforma</p>
+        </li>
+
+        <li class="tutorial__item">
+          <i class="tutorial__icone icone tutorial__icone--2"></i>
+          <p class="texto">Realize o teste em um computador ou tablet</p>
+        </li>
+
+        <li class="tutorial__item">
+          <i class="tutorial__icone icone tutorial__icone--3"></i>
+          <p class="texto">Tenha acesso gratuitamente ao seu relatório resumido</p>
+        </li>
+
+        <li class="tutorial__item">
+          <i class="tutorial__icone icone tutorial__icone--4"></i>
+          <p class="texto">Pague seu relatório</p>
+        </li>
+
+        <li class="tutorial__item">
+          <i class="tutorial__icone icone tutorial__icone--5"></i>
+          <p class="texto">Valide os resultados</p>
+        </li>
+
+        <li class="tutorial__item">
+          <i class="tutorial__icone icone tutorial__icone--6"></i>
+          <p class="texto">Tenha acesso ao seu relatório completo</p>
+        </li>
+
+        <li class="tutorial__item">
+          <i class="tutorial__icone icone tutorial__icone--7"></i>
+          <p class="texto">Envie os resultados do seu teste para um clube cadastrado na plataforma</p>
         </li>
       </ul>
   
       <video class="tutorial__video" src=""></video>
-  
-      <p class="texto">Visite o canal do youtube da TacticUP para ter acesso a mais tutoriais de como utilizar a plataforma.</p>
-      <a class="botao botao--secundario" href="#">Conheça a plataforma</a>
+      <div class="wrapper">
+        <p class="texto">Visite o canal do youtube da TacticUP para ter acesso a mais tutoriais de como utilizar a plataforma.</p>
+        <a class="botao botao--secundario" href="#">Conheça a plataforma</a>
+      </div>
     </section>
   
     <section class="cta-tu container">
-      <i></i>
+      <i class="cta-tu__logo icone"></i>
       <h2 class="titulo cta-tu__titulo">O melhor caminho para lapidar atletas</h2>
       <p class="cta-tu__subtitulo texto">Nossa plataforma permite que o jogador conheça melhor e potencialize suas habilidades. Não perca tempo, faça um teste!</p>
       <a class="cta-tu__botao botao botao--primario" href="https://login.tacticup.com.br/">Experimente grátis</a>
@@ -205,14 +282,14 @@
       <h2 class="titulo">Pesquisa científica</h2>
       <div class="pesquisa__colaborador">
         <h3><span class="maiusculo">Nupef</span></h3>
-        <i></i>
+        <i class="pesquisa__icone icone pesquisa__icone--nupef"></i>
         <p class="primeiro pesquisa__texto texto">O NUPEF – Núcleo de Pesquisas e Estudos em Futebol – Universidade Federal de Viçosa – é a parceira oficial da TacticUP Nosso contrato de cooperação técnica garante transferência de conhecimento e evolução constante da metodologia científica.</p>
         <p class="pesquisa__texto texto">Veja os artigos científicos publicados sobre a metodologia científica em <a href="#">www.nucleofutebol.ufv.br</a></p>
       </div>
   
       <div class="pesquisa__colaborador">
         <h3>Professor Israel</h3>
-        <i></i>
+        <i class="pesquisa__icone icone"></i>
         <p class="primeiro pesquisa__texto texto">Professor Israel é PhD em Ciências do Esporte pela Brunel University London, pesquisador coordenador do NUPEF e criador da metodologia da TacticUP.</p>
         <img src="" alt="">
         <img src="" alt="">
@@ -256,7 +333,7 @@
       <p class="rodape__titulo texto">Contato</p>
       <a class="rodape__link primeiro texto" href="mailto:contato@tacticup.com.br">contato@tacticup.com.br</a>
     </nav>
-    <i></i>
+    <i class="rodape__logo icone"></i>
     <p class="rodape__texto texto">© 2021 TacticUP - Avaliação Tática de Futebol</p>
     <div class="rodape__redes-sociais">
       <img src="" alt="">

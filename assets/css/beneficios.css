@@ -13,17 +13,18 @@
 .beneficios__card {
   background-color: var(--cor-secundaria);
   border-radius: 5px;
+  padding: 1.5rem .5rem;
+  width: 222px;
 }
 
 .beneficios__card .texto {
   color: #fff;
+  margin-top: 1.125rem;
 }
 
 .beneficios__icone {
-  display: block;
   width: 64px;
   height: 64px;
-  background-size: contain;
 }
 
 .beneficios__icone--card-1 {

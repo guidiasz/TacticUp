@@ -6,6 +6,32 @@
   margin-top: 2.5rem;
 }
 
+.para-quem__icone {
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+}
+
+.para-quem__icone--jogadores{
+  background-image: url(../img/para-quem/icone-jogadores.svg);
+}
+
+.para-quem__icone--escolas{
+  background-image: url(../img/para-quem/icone-escolas.svg);
+}
+
+.para-quem__icone--treinadores{
+  background-image: url(../img/para-quem/icone-treinadores.svg);
+}
+
+.para-quem__icone--analistas{
+  background-image: url(../img/para-quem/icone-analistas.svg);
+}
+
+.para-quem__icone--direcao{
+  background-image: url(../img/para-quem/icone-direcao.svg);
+}
+
 .para-quem__ilustracao{
   border-radius: 5px;
   display: block;
@@ -14,21 +40,21 @@
 }
 
 .para-quem__ilustracao--jogadores {
-  background-image: url(../img/jogadores.jpg);
+  background-image: url(../img/para-quem/jogadores.jpg);
 }
 
 .para-quem__ilustracao--escolas {
-  background-image: url(../img/escolas.jpg);
+  background-image: url(../img/para-quem/escolas.jpg);
 }
 
 .para-quem__ilustracao--treinadores {
-  background-image: url(../img/treinadores.jpg);
+  background-image: url(../img/para-quem/treinadores.jpg);
 }
 
 .para-quem__ilustracao--analistas {
-  background-image: url(../img/analistas.jpg);
+  background-image: url(../img/para-quem/analistas.jpg);
 }
 
 .para-quem__ilustracao--direcao {
-  background-image: url(../img/direcao.jpg);
+  background-image: url(../img/para-quem/direcao.jpg);
 }

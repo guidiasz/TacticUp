@@ -1,5 +1,17 @@
 .cta-tu {
-  background-color: var(--cor-texto-escuro);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.45)), url(../img/fundo-cta-tu.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-top: .5rem;
+}
+
+.cta-tu__logo {
+  background-image: url(../img/logo-tacticUP-branca-larga.svg);
+  height: 61.26px;
+  margin: 0 auto;
+  width: 185px;
 }
 
 .cta-tu__titulo {

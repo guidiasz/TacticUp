@@ -2,6 +2,16 @@
   margin-top: 2.25rem;
 }
 
+.pesquisa__icone {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+}
+
+.pesquisa__icone--nupef {
+  background-image: url(../img/pesquisa/nupef.png);
+}
+
 .pesquisa__texto.primeiro {
   margin-top: 1.125rem;
 }

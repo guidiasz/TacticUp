@@ -19,17 +19,20 @@
   font-family: var(--ff-titulo);
 }
 .rodape .rodape__link.primeiro {
-  margin-top: 1rem;
+  margin-top: .75rem;
 }
 .rodape .rodape__link + .rodape__link {
   margin-top: .5rem;
 }
 
-.rodape i {
-  display: block;
+.rodape__logo {
+  width: 128px;
+  height: 90px;
+  background-image: url(../img/logo-tacticUP-branca.svg);
   margin-top: 2.75rem;
 }
 
-i + .rodape__texto {
+.rodape__logo + .rodape__texto {
   margin-top: 1.125rem;
 }
+
