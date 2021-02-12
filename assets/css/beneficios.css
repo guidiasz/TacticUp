@@ -1,5 +1,9 @@
+:root {
+  --gutter: 20px;
+}
 .beneficios {
   background-color: var(--cor-secundaria-escuro);
+  padding-right: 0;
 }
 
 .beneficios__titulo {
@@ -7,19 +11,25 @@
 }
 
 .beneficios__cards {
-  margin-top: 40px;
+  margin-top: 2.5rem;
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-columns: 0px repeat(5, calc(80% - 2.75rem)) .5rem;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: 1rem;
+  margin-left: -.5rem;
 }
 
 .beneficios__card {
   background-color: var(--cor-secundaria);
   border-radius: 5px;
   padding: 1.5rem .5rem;
-  width: 222px;
 }
 
-.beneficios__card .texto {
-  color: #fff;
-  margin-top: 1.125rem;
+.beneficios__cards:before,
+.beneficios__cards:after {
+  content: '';
 }
 
 .beneficios__icone {
@@ -45,4 +55,13 @@
 
 .beneficios__icone--card-5 {
   background-image: url(../img/beneficios/beneficio-5.svg);
+}
+
+.beneficios__card .texto {
+  color: #fff;
+  margin-top: 1.125rem;
+}
+
+.beneficios__botao {
+  margin-top: 1rem;
 }
