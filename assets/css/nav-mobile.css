@@ -22,6 +22,10 @@
   text-align: center;
 }
 
+.nav-mobile__link:hover, .nav-mobile__link:focus, .nav-mobile__link:active {
+  background-color: var(--cor-fundo-claro);
+}
+
 .nav-mobile__link.primeiro {
   width: 56px;
 }

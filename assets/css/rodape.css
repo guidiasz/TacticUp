@@ -1,5 +1,6 @@
 .rodape {
   background-color: var(--cor-texto-escuro);
+  padding-bottom: 8rem;
 }
 
 .rodape__nav {
@@ -36,3 +37,27 @@
   margin-top: 1.125rem;
 }
 
+.rodape__redes-sociais {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.rodape__rede-social {
+  width: 48px;
+}
+
+.rodape__rede-social + .rodape__rede-social{
+  margin-left: 3rem;
+}
+
+.rodape__form {
+  text-align: center;
+  color: #fff;
+  font-size: 1.125rem;
+  margin-top: 3rem;
+}
+
+.rodape__form label + input {
+  margin-left: 1rem;
+}

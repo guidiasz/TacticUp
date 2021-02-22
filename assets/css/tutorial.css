@@ -6,9 +6,56 @@
   margin-top: 2.5rem;
 }
 
+.tutorial__botoes {
+  display: flex;
+}
+
+
+.tutorial__botao {
+  background-color: inherit;
+  flex-grow: 1;
+  border: 2px solid #D3CEC4;
+  border-radius: 0 5px 5px 0;
+  font-family: var(--ff-titulo);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: .375rem 0;
+}
+
+.tutorial__botao.primeiro {
+  border-radius: 5px 0 0 5px;
+}
+
+.tutorial__botao.ativo {
+  background-color: var(--cor-ativo);
+  color: #fff;
+  border-color: var(--cor-ativo);
+}
+
+.tutorial__item {
+  display: flex;
+}
+
+.tutorial__item + .tutorial__item {
+  margin-top: 2rem;
+}
+
 .tutorial__icone {
   height: 56px;
   width: 56px;
+  flex: 0 0 56px;
+}
+
+.tutorial__item .texto {
+  color: var(--cor-texto-escuro);
+  line-height: 1.2;
+  margin-left: 1rem;
+}
+
+.tutorial__obs {
+  color: var(--cor-texto);
+  display: block;
+  font-size: .875rem;
 }
 
 .tutorial__icone--1 {

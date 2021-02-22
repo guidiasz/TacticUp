@@ -23,12 +23,12 @@
 <body>
   <header class="cabecalho">
     <div class="cabecalho__container">
-      <a class="cabecalho__hamburger" href="#">
+      <button class="cabecalho__hamburger" href="#">
         <div></div>
         <div></div>
         <div></div>
-      </a>
-      <a href="/">
+      </button>
+      <a href="#">
         <span class="cabecalho__logo icone">TacticUP</span>
       </a>
       <nav class="cabecalho__menu">
@@ -97,7 +97,7 @@
   
     </section>
   
-    <section class="sobre container">
+    <section id="sobre" class="sobre container">
       <h2 class="sobre__titulo titulo">Avaliação da tomada de decisão para alcançar sua melhor performance</h2>
       <p class="sobre__texto primeiro texto">A TacticUP é uma plataforma que permite avaliar a capacidade tática de jogadores de futebol através de um teste online.</p>
       <p class="sobre__texto texto">O resultado do teste fornece informações objetivas sobre a capacidade de leitura de jogo e tomada de decisão dos jogadores.</p>
@@ -108,7 +108,7 @@
       </div>
     </section>
   
-    <section class="para-quem container">
+    <section id="para-quem" class="para-quem container">
       <h2 class="para-quem__titulo titulo">Para quem é esta plataforma?</h2>
       <div class="para-quem__botoes">
         <button class="para-quem__botao">
@@ -165,7 +165,7 @@
       <a class="botao botao--primario" href="https://login.tacticup.com.br/">Experimente grátis</a>
     </section>
   
-    <section class="beneficios container">
+    <section id="beneficios" class="beneficios container">
       <h2 class="beneficios__titulo titulo">Benefícios</h2>
       <div class="beneficios__cards">
         <div class="beneficios__card">
@@ -205,11 +205,11 @@
       <a class="botao botao--secundario" href="#">Palestras gratuitas</a>
     </section>
   
-    <section class="tutorial container">
+    <section id="como-usar" class="tutorial container">
       <h2 class="titulo">Entenda como utilizar o TacticUp</h2>
       <div class="tutorial__botoes">
-        <button>Jogador</button>
-        <button>Clube</button>
+        <button class="tutorial__botao ativo primeiro">Jogador</button>
+        <button class="tutorial__botao">Clube</button>
       </div>
   
       <ul class="tutorial__lista">
@@ -220,7 +220,7 @@
 
         <li class="tutorial__item">
           <i class="tutorial__icone icone tutorial__icone--2"></i>
-          <p class="texto">Realize o teste em um computador ou tablet</p>
+          <p class="texto">Realize o teste em um computador ou tablet <span class="tutorial__obs">OBS: O tamanho mínimo da tela deve ser 10 polegadas</span></p>
         </li>
 
         <li class="tutorial__item">
@@ -300,15 +300,58 @@
       <h2 class="titulo">Nossa equipe</h2>
       <ul class="equipe__colaboradores">
         <li class="equipe__colaborador">
-          <i></i>
-          <h4>Paulo Márcio</h4>
-          <p class="texto"> CEO – MBA em Gestão Competitiva e 20 anos de experiência em gestão e inovação</p>
+          <i class="equipe__foto"></i>
+          <div>
+            <h4 class="equipe__nome">Paulo Márcio</h4>
+            <p class="equipe__sobre texto"> CEO – MBA em Gestão Competitiva e 20 anos de experiência em gestão e inovação</p>
+          </div>
         </li>
 
         <li class="equipe__colaborador">
-          <i></i>
-          <h4>Guilherme Machado</h4>
-          <p class="texto">Mestre em Educação Física pela UFV, com experiência como treinador e coordenador em escolas e clubes de futebol no Brasil e exterior</p>
+          <i class="equipe__foto"></i>
+          <div>
+            <h4 class="equipe__nome">Guilherme Machado</h4>
+            <p class="equipe__sobre texto">Mestre em Educação Física pela UFV, com experiência como treinador e coordenador em escolas e clubes de futebol no Brasil e exterior</p>
+          </div>
+        </li>
+
+        <li class="equipe__colaborador">
+          <i class="equipe__foto"></i>
+          <div>
+            <h4 class="equipe__nome">Alessandro Teixeira</h4>
+            <p class="equipe__sobre texto">Mestrado em Ciência da Computação e 20 anos de experiência</p>
+          </div>
+        </li>
+
+        <li class="equipe__colaborador">
+          <i class="equipe__foto"></i>
+          <div>
+            <h4 class="equipe__nome">Daiane de Freitas</h4>
+            <p class="equipe__sobre texto">Doutora em Ciências do Desporto pela Faculdade de Desporto da Universidade do Porto, Portugal</p>
+          </div>
+        </li>
+
+        <li class="equipe__colaborador">
+          <i class="equipe__foto"></i>
+          <div>
+            <h4 class="equipe__nome">Cláudia</h4>
+            <p class="equipe__sobre texto">Graduada em Ciência da Computação pela UFV</p>
+          </div>
+        </li>
+
+        <li class="equipe__colaborador">
+          <i class="equipe__foto"></i>
+          <div>
+            <h4 class="equipe__nome">Matheus</h4>
+            <p class="equipe__sobre texto">Graduando em Computação pela UFV</p>
+          </div>
+        </li>
+
+        <li class="equipe__colaborador equipe__colaborador--cientec">
+          <i class="equipe__foto"></i>
+          <div>
+            <h4 class="equipe__nome">Equipe de Gestão da Cientec Aceleradora</h4>
+          </div>
         </li>
       </ul>
     </section>
@@ -336,14 +379,19 @@
     <i class="rodape__logo icone"></i>
     <p class="rodape__texto texto">© 2021 TacticUP - Avaliação Tática de Futebol</p>
     <div class="rodape__redes-sociais">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+      <img class="rodape__rede-social" src="./assets/img/rede-social.png" alt="Facebook">
+      <img class="rodape__rede-social" src="./assets/img/rede-social.png" alt="Instagram">
+      <img class="rodape__rede-social" src="./assets/img/rede-social.png" alt="Linkedin">
     </div>
-    <form >
-      <input type="radio" name="teste" value="Português" id="">
-      <input type="radio" name="" value="English" id="">
-      <input type="radio" name="" value="Spanish" id="">
+    <form class="rodape__form">
+      <input type="radio" name="idioma" id="portugues" value="portugues">
+      <label for="portugues">Português</label>
+
+      <input type="radio" name="idioma" id="english" value="english">
+      <label for="english">English</label>
+
+      <input type="radio" name="idioma" id="spanish" value="spanish">
+      <label for="spanish">Spanish</label>
     </form>
   </footer>
 

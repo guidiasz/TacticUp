@@ -21,6 +21,7 @@
 html {
   box-sizing: border-box;
   font-family: var(--ff-sans);
+  scroll-behavior: smooth;
 }
 
 img {
