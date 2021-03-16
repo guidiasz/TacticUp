@@ -59,6 +59,7 @@ h1 {
   font-size: 2.25rem;
   padding-top: 1.4375rem;
   line-height: 1.2;
+  max-width: 520px;
 }
 
 .texto {
@@ -66,6 +67,7 @@ h1 {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5;
+  max-width: 520px;
 }
 
 .texto+.texto {
@@ -105,4 +107,42 @@ h1 {
 
 .botao--primario:hover, .botao--secundario:hover {
   opacity: .8;
+}
+
+.ancora {
+  display: block;
+  position: relative;
+  visibility: hidden;
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 20px;
+  }
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1152px) {
+  main {
+    margin-top: 103.5px;
+  }
+  
+  .ancora {
+    top: -103px;
+  }
+
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

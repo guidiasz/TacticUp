@@ -1,17 +1,27 @@
 .rodape {
   background-color: var(--cor-texto-escuro);
+  padding-top: 1.6875rem;
   padding-bottom: 8rem;
 }
 
-.rodape__nav {
-  padding-top: 2.5rem;
+.rodape .container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 1.6875rem;
 }
+
+.rodape__nav, .rodape__form {
+  grid-column: span 6;
+}
+
 .rodape__titulo {
   color: rgba(255,255, 255,.6);
+  font-size: 18px;
 }
 
 .rodape__texto, .rodape__link {
   color: white;
+  font-size: 18px;
 }
 
 .rodape__link {
@@ -30,34 +40,68 @@
   width: 128px;
   height: 90px;
   background-image: url(../img/logo-tacticUP-branca.svg);
-  margin-top: 2.75rem;
+  margin-top: 2rem;
 }
 
 .rodape__logo + .rodape__texto {
   margin-top: 1.125rem;
+  max-width: 265px;
 }
 
 .rodape__redes-sociais {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 1.25rem;
+  max-width: 208px;
 }
 
 .rodape__rede-social {
   width: 48px;
 }
 
-.rodape__rede-social + .rodape__rede-social{
-  margin-left: 3rem;
-}
-
 .rodape__form {
   text-align: center;
   color: #fff;
-  font-size: 1.125rem;
-  margin-top: 3rem;
+  font-size: 18px;
 }
 
 .rodape__form label + input {
   margin-left: 1rem;
+}
+
+@media (min-width:530px) {
+  .rodape .container {
+    column-gap: 2rem;
+  }
+
+  .rodape__nav{
+    grid-column: span 3;
+  }
+
+  .rodape__form {
+    grid-column: span 6;
+  }
+
+  .rodape__logo {
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: 960px) {
+  .rodape {
+    padding-bottom: 0;
+  }
+
+  .rodape .container {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .rodape__form {
+    grid-column: span 8;
+  }
+
+  .rodape__nav {
+    grid-column: span 2;
+  }
 }

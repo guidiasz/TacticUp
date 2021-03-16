@@ -5,6 +5,10 @@
   background-color: rgba(0,0,0,0.15);
 }
 
+.cabecalho .texto + .texto  {
+  margin-top: 0;
+}
+
 .cabecalho.ativo {
   background-color: #fff;
   position: fixed;
@@ -19,6 +23,8 @@
   align-items: center;
   justify-content: space-between;
   padding: .5rem 1rem;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 .cabecalho__logo {
@@ -139,6 +145,7 @@
   padding: .85rem;
   text-decoration: none;
   display: block;
+  text-align: left;
 }
 
 /* Change color of dropdown links on hover */
@@ -146,3 +153,54 @@
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .exibe {display:block;} 
+
+.cabecalho__botoes--pc {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .cabecalho {
+    background: #fff;
+    position: fixed;
+    z-index: 9999;
+    border-bottom: solid 1px #ddd;
+  }
+
+  .cabecalho__hamburger{
+    display: none;
+  }
+  .cabecalho__menu {
+    height: initial;
+    position: initial;
+    transform: unset;
+    width: unset;
+    background: none;
+    padding: 0;
+  }
+
+  .cabecalho__itens {
+    display: flex;
+  }
+
+  .cabecalho__link {
+    padding: 1.5rem .4rem;
+    color: var(--cor-texto-escuro);
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .cabecalho__botoes--pc {
+    display: flex;
+  }
+
+  .cabecalho__dropdown {
+    display: none;
+  }
+
+  .cabecalho__botao--clube {
+    border: solid 3px var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    margin-left: 16px;
+  }
+}

@@ -1,8 +1,8 @@
-:root {
-  --gutter: 20px;
-}
 .beneficios {
   background-color: var(--cor-secundaria-escuro);
+}
+
+.beneficios .container {
   padding-right: 0;
 }
 
@@ -19,6 +19,7 @@
   scroll-snap-type: x proximity;
   padding-bottom: 1rem;
   margin-left: -.5rem;
+
 }
 
 .beneficios__card {
@@ -64,4 +65,48 @@
 
 .beneficios__botao {
   margin-top: 1rem;
+}
+
+@media (min-width: 530px) {
+  .beneficios__cards {
+    grid-template-columns: 0px repeat(5, 360px) .5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .beneficios {
+    text-align: center;
+  }
+
+  .beneficios__titulo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .beneficios__cards {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: .9375rem;
+    overflow-x: unset;
+    scroll-snap-type:none;
+    margin-left: 0;
+  }
+
+  .beneficios__cards:before,
+  .beneficios__cards:after {
+    display: none;
+  }
+
+  .beneficios__card{
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  div.beneficios__card:first-child, div.beneficios__card:nth-child(2) {
+    grid-column: span 3;
+  }
+
+  .beneficios__icone {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

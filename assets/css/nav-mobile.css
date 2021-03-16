@@ -5,6 +5,8 @@
   width: 100%;
   background-color: #fff;
   border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
   z-index: 9999;
 }
 
@@ -18,17 +20,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 72px;
+  width: 4.5rem;
   height: 64px;
   text-align: center;
 }
 
 .nav-mobile__link:hover, .nav-mobile__link:focus, .nav-mobile__link:active {
   background-color: var(--cor-fundo-claro);
-}
-
-.nav-mobile__link.primeiro {
-  width: 56px;
 }
 
 .nav-mobile__link span {
@@ -59,4 +57,16 @@ background-image: url(../img/logo-tacticUP-mini.svg);
 
 .nav-mobile__icone--5 {
   background-image: url(../img/nav-mobile/como-usar.svg);
+}
+
+@media (max-width:376px) {
+  .nav-mobile__link.primeiro {
+    width: 3.5rem;
+  }
+}
+
+@media (min-width:960px) {
+  .nav-mobile {
+    display: none;
+  }
 }

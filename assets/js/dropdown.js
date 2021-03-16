@@ -8,7 +8,6 @@ botaoDropdown.addEventListener('click', function(event){
 
 window.addEventListener('click', function(event){
   // if (!event.target.matches('#botaoDropdown')) {
-    console.log('chamou')
     var dropdowns = document.getElementsByClassName("cabecalho__subitens");
     var i;
     for (i = 0; i < dropdowns.length; i++) {

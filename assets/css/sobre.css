@@ -1,7 +1,43 @@
+.sobre__titulo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobre__texto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .sobre__texto.primeiro {
   margin-top: 2rem;
 }
 
 .sobre__imagem-demonstacao {
-  margin: 1.5rem 0; 
+  margin: 1.5rem auto 1.5rem auto; 
+}
+
+.sobre__chamada {
+  text-align: center;
+}
+
+@media (min-width: 960px) {
+  .sobre .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+  }
+  .sobre__descricao {
+    grid-column: span 1;
+  }
+
+  .sobre__imagem-demonstacao {
+    grid-row: 1 / 4;
+    grid-column: 2;
+    padding-left: 4rem;
+  }
+
+  .sobre__chamada {
+    text-align: left;
+    margin-top: 1.125rem;
+  }
 }

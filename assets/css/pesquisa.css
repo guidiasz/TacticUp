@@ -1,17 +1,62 @@
+.pesquisa .texto, .pesquisa__titulo {
+  max-width: unset;
+}
+
 .pesquisa__colaborador {
   margin-top: 2.25rem;
+}
+
+.pesquisa__icones {
+  display: flex;
 }
 
 .pesquisa__icone {
   width: 128px;
   height: 128px;
   margin: 1.5rem auto 0 auto;
+  border-radius: 50%;
+  background-position: center;
 }
 
 .pesquisa__icone--nupef {
   background-image: url(../img/pesquisa/nupef.png);
 }
 
+.pesquisa__icone--ufv {
+  background-image: url(../img/pesquisa/ufv.svg);
+  border-radius: 0;
+}
+
+.pesquisa__icone--professor {
+  background-image: url(../img/pesquisa/professor.jpg);
+}
+
 .pesquisa__texto.primeiro {
   margin-top: 1.125rem;
+}
+
+@media (min-width: 960px) { 
+  .pesquisa__titulo {
+    max-width: 520px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pesquisa__colaboradores {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pesquisa__colaborador {
+    flex: 1 0 50%;
+    background-color: var(--cor-fundo-claro);
+    border-radius: 5px;
+    padding: 16px 16px 24px 16px;
+  }
+
+  .pesquisa__colaborador:first-child {
+    margin-right: 1rem;
+  }
+
 }

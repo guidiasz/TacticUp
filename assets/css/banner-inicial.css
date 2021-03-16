@@ -1,20 +1,40 @@
 .banner-inicial {
   padding-top: 5rem;
-  min-height: calc(100vh - 82px);
+  height: calc(100vh - 82px);
+  min-height: 480px;
   background-color: var(--cor-secundaria);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),
   rgba(0, 0, 0, 0.5)), url('../img/banner-inicial.jpg');
   background-position: 67% bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: -1;
 }
 
 .banner-inicial__titulo {
   margin-top: 2.25rem;
   margin-bottom: 1rem;
   color: #fff;
+  max-width: 520px;
 }
 
 .banner-inicial__subtitulo {
   color: #fff;
+}
+
+@media (min-width: 700px) {
+  .banner-inicial .container{
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0,-50%, 0);
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding-bottom: 0;
+  }
+
+  .banner-inicial__titulo{
+    /* margin-top: 0; */
+  }
 }

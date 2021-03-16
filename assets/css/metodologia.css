@@ -5,6 +5,7 @@
 .metodologia__titulo--principio {
   font-size: 1.5rem;  
   margin-bottom: 1.625rem;
+  text-align: left;
 }
 
 .metodologia__titulo--acordeao {
@@ -24,7 +25,6 @@
 }
 
 .metodologia__texto.primeiro {
-  display: none;
   margin-top: 1.5rem;
 }
 
@@ -81,4 +81,54 @@
 
 .metodologia__painel p.texto:last-child  {
   padding-bottom: 1.5rem;
+}
+
+@media (min-width:700px) {
+  .metodologia__titulo, .metodologia__subtitulo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .metodologia__subtitulo, .metodologia__texto  {
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .metodologia__ebook {
+    text-align: center;
+  }
+}
+
+@media (min-width: 960px) {
+  .metodologia .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .metodologia__principios + .metodologia__principios {
+    margin-top: 1.125rem;
+    margin-left: 1rem;
+  }
+
+  .metodologia__principios {
+    max-width: 520px;
+  }
+
+  .metodologia__detalhes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .metodologia__detalhes .metodologia__texto {
+    max-width: 520px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    flex: 1 0 50%;
+  }
+
+  
 }

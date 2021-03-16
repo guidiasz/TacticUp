@@ -27,6 +27,35 @@
   display: block;
   border-radius: 50%;
   margin-right: .5rem;
+  background-size: contain;
+}
+
+.equipe__foto--1 {
+  background-image: url('../img/equipe/paulo-marcio.jpg');
+}
+
+.equipe__foto--2 {
+  background-image: url('../img/equipe/guilherme-machado.jpg');
+}
+
+.equipe__foto--3 {
+  background-image: url('../img/equipe/alessandro-teixeira.jpg');
+}
+
+.equipe__foto--4 {
+  background-image: url('../img/equipe/daiane-de-freitas.jpg');
+}
+
+.equipe__foto--5 {
+  background-image: url('../img/equipe/claudia.jpg');
+}
+
+.equipe__foto--6 {
+  background-image: url('../img/equipe/matheus.jpg');
+}
+
+.equipe__foto--7 {
+  background-image: url('../img/equipe/cientec.svg');
 }
 
 .equipe__nome {
@@ -36,4 +65,28 @@
 .equipe__sobre {
   margin-top: .25rem;
   font-size: 1rem;
+}
+
+@media (min-width: 960px) {
+  .equipe__colaboradores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .equipe__colaborador {
+    display: block;
+    text-align: center;
+    max-width: 265px;
+    margin-bottom: 32px;
+  }
+
+  .equipe__colaborador + .equipe__colaborador {
+    margin-top: 0;
+  }
+
+  .equipe__foto {
+    margin: 0 auto 12px auto;
+  }
+
 }
