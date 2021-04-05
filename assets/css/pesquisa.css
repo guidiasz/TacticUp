@@ -35,6 +35,14 @@
   margin-top: 1.125rem;
 }
 
+.pesquisa__link {
+  color: var(--cor-secundaria);
+}
+
+.pesquisa__link:hover {
+  text-decoration: none;
+}
+
 @media (min-width: 960px) { 
   .pesquisa__titulo {
     max-width: 520px;

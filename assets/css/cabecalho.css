@@ -3,6 +3,7 @@
   position: absolute;
   top: 0;
   background-color: rgba(0,0,0,0.15);
+  z-index: 1;
 }
 
 .cabecalho .texto + .texto  {
@@ -99,7 +100,7 @@
 }
 
 .cabecalho__link:hover, .cabecalho__link:active, .cabecalho__link:focus {
-  color: var(--cor-texto-escuro);
+  color: var(--cor-ativo);
   background-color: var(--cor-fundo-claro);
   border-radius: 5px;
 }
@@ -117,19 +118,20 @@
   margin-left: 2px;
 }
 
-/* Dropdown button on hover & focus */
 .cabecalho__botao:hover, .cabecalho__botao:focus {
-  background: var(--cor-secundaria-escuro);
+  background-image: linear-gradient( 86deg, var(--cor-secundaria-escuro), var(--cor-secundaria-escuro) );
   opacity: 1;
 }
 
-/* The container <div> - needed to position the dropdown content */
+.cabecalho__botao--clube:hover, .cabecalho__botao--clube:focus {
+  background: var(--cor-fundo-claro);
+}
+
 .cabecalho__dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .cabecalho__subitens {
   background-color: var(--cor-fundo-claro);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -140,7 +142,6 @@
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .cabecalho__subitens a {
   padding: .85rem;
   text-decoration: none;
@@ -148,10 +149,8 @@
   text-align: left;
 }
 
-/* Change color of dropdown links on hover */
 .cabecalho__subitens a:hover {background-color: #e8e6e1;}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .exibe {display:block;} 
 
 .cabecalho__botoes--pc {
@@ -164,6 +163,12 @@
     position: fixed;
     z-index: 9999;
     border-bottom: solid 1px #ddd;
+  }
+
+  .cabecalho__logo {
+    background: url( ../img/logo-tacticUP-colorida-larga.svg);
+    height: 62px;
+    width: 186px;
   }
 
   .cabecalho__hamburger{
@@ -184,14 +189,28 @@
 
   .cabecalho__link {
     padding: 1.5rem .4rem;
+    font-size: 20px;
     color: var(--cor-texto-escuro);
+    transition: .3s;
   }
 
+  main {
+    margin-top: 100px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .cabecalho__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .cabecalho__botoes--pc {
     display: flex;
+  }
+
+  .cabecalho__botoes--pc .botao {
+    font-size: 20px;
   }
 
   .cabecalho__dropdown {

@@ -1,21 +1,20 @@
 function resetScroll() {
   paraQuemBotoesContainer.scroll({
-    top:0, 
+    top: 0,
     left: 0,
     behavior: 'smooth'
   });
 
   paraQuemItensContainer.scroll({
-    top:0, 
+    top: 0,
     left: 0,
     behavior: 'smooth'
   });
 }
 
-function setPosicaoItens () {
+function setPosicaoItens() {
   let i = 0;
-  for(i; i < paraQuemBotoes.length; i++) {
-    console.log(paraQuemBotoes[i].getBoundingClientRect().left);
+  for (i; i < paraQuemBotoes.length; i++) {
     paraQuemBotoes[i].posEsquerda = paraQuemBotoes[i].getBoundingClientRect().left;
     paraQuemItens[i].posEsquerda = paraQuemItens[i].getBoundingClientRect().left;
   }
@@ -23,8 +22,8 @@ function setPosicaoItens () {
 
 function desativaBotao() {
   let i = 0;
-  for(i; i < paraQuemBotoes.length; i++) {
-    if(paraQuemBotoes[i].classList.contains('ativo')) {
+  for (i; i < paraQuemBotoes.length; i++) {
+    if (paraQuemBotoes[i].classList.contains('ativo')) {
       paraQuemBotoes[i].classList.remove('ativo');
       break;
     }
@@ -32,34 +31,32 @@ function desativaBotao() {
 }
 
 function scrollItem(indice) {
-  console.log(paraQuemItens[indice].posEsquerda);
-  console.log(paraQuemBotoesContainer.scroll.constructor.name);
   paraQuemItensContainer.scroll({
-    top: 0, 
+    top: 0,
     left: paraQuemItens[indice].posEsquerda - paraQuemItens[0].posEsquerda,
     behavior: 'smooth'
   });
 }
 
 function addEventoBotoes() {
-  paraQuemBotoes.forEach(function(botao, indice){
+  paraQuemBotoes.forEach(function (botao, indice) {
     botao.indice = indice;
-    botao.addEventListener('click', function(){
+    botao.addEventListener('click', function () {
       desativaBotao();
       botao.classList.toggle('ativo');
-  
+
       paraQuemBotoesContainer.scroll({
-        top:0, 
+        top: 0,
         left: botao.posEsquerda - 64,
         behavior: 'smooth'
       });
       scrollItem(botao.indice);
     });
   });
-  
+
 }
 
-window.addEventListener("resize", function(event) {
+window.addEventListener("resize", function (event) {
   setPosicaoItens();
   resetScroll();
   desativaBotao();

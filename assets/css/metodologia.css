@@ -77,6 +77,11 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   border-radius: 5px;
+  text-align: left;
+}
+
+.metodologia__ilustracao {
+  margin-bottom: .5rem;
 }
 
 .metodologia__painel p.texto:last-child  {

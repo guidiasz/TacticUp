@@ -27,8 +27,9 @@
   border-radius: 0 5px 5px 0;
   font-family: var(--ff-titulo);
   font-size: 1.5rem;
-  cursor: pointer;
-  padding: .375rem 0;
+  margin-top: 0;
+  text-align: center;
+  color: var(--cor-texto-escuro);
 }
 
 .tutorial__botao.primeiro {
@@ -39,6 +40,14 @@
   background-color: var(--cor-ativo);
   color: #fff;
   border-color: var(--cor-ativo);
+}
+
+.tutorial__secao {
+  display: none;
+}
+
+.tutorial__secao.ativo {
+  display: block;
 }
 
 .tutorial__item {
@@ -95,26 +104,16 @@
   background-image: url(../img/tutorial/icone-tutorial-jogador-7.svg);
 }
 
+.tutorial__icone--8 {
+  background-image: url(../img/tutorial/icone-tutorial-jogador-8.svg);
+}
+
 .tutorial__yt {
   text-align: center;
 }
 
 .tutorial__video{
   margin-bottom: 1.5rem;
-}
-
-@media (min-width:768px) {
-  .tutorial__yt {
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 4rem;
-    column-gap: 4rem;
-  }
-
-  .tutorial__video {
-    margin: 0;
-  }
 }
 
 @media (min-width: 960px) {
@@ -132,18 +131,27 @@
     justify-content: space-between;
   }
 
-  .tutorial__lista {
-    border-radius: 5px;
-    background-color: #fff;
+  .tutorial__listas .tutorial__secao {
+    display: flex;
     max-width: 516px;
     width: 100%;
-    padding-bottom: 24px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .tutorial__lista:first-child {
+  .tutorial__secao:first-child {
     margin-right: 1rem;
   }
   
+  .tutorial__lista {
+    border-radius: 5px;
+    background-color: #fff;
+    padding-bottom: 24px;
+    width: 100%;
+    flex-grow: 1;
+  }
+
   .tutorial__titulo--lista {
     display: block;
     font-size: 36px;

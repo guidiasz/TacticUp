@@ -28,7 +28,13 @@
   text-decoration: none;
   display: block;
   font-family: var(--ff-titulo);
+  transition: .3s;
 }
+
+.rodape__link:hover {
+  color: var(--cor-ativo);
+}
+
 .rodape .rodape__link.primeiro {
   margin-top: .75rem;
 }

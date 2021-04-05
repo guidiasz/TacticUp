@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/cabecalho.css">
   <link rel="stylesheet" href="./assets/css/nav-mobile.css">
+  <link rel="stylesheet" href="./assets/css/parceiros.css">
   <link rel="stylesheet" href="./assets/css/banner-inicial.css">
   <link rel="stylesheet" href="./assets/css/sobre.css">
   <link rel="stylesheet" href="./assets/css/para-quem.css">
@@ -21,6 +23,7 @@
   <link rel="stylesheet" href="./assets/css/rodape.css">
   <link rel="stylesheet" href="./assets/css/videos.css">
 </head>
+
 <body>
   <header class="cabecalho">
     <div class="cabecalho__container">
@@ -44,14 +47,15 @@
         <button id="botaoDropdown" class="botao botao--secundario cabecalho__botao">
           <span>Login</span>
           <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6">
-            <path d="M.854.854l4.792 4.792a.5.5 0 00.708 0L11.146.854A.5.5 0 0010.793 0H1.207a.5.5 0 00-.353.854z" fill="#fff"/>
+            <path d="M.854.854l4.792 4.792a.5.5 0 00.708 0L11.146.854A.5.5 0 0010.793 0H1.207a.5.5 0 00-.353.854z"
+              fill="#fff" />
           </svg>
         </button>
         <div id="dropdown" class="cabecalho__subitens">
           <a class="texto" href="https://login.tacticup.com.br/">Jogador</a>
           <a class="texto" href="https://login.tacticup.com.br/#/?redirect=/choice">Clube</a>
         </div>
-      </div> 
+      </div>
       <div class="cabecalho__botoes--pc">
         <a class="cabecalho__botao botao botao--secundario" href="#">Login do jogador</a>
         <a class="cabecalho__botao cabecalho__botao--clube botao" href="#">Login do clube</a>
@@ -59,67 +63,148 @@
     </div>
   </header>
   <nav class="nav-mobile">
-      <ul class="nav-mobile__menu">
-        <li>
-          <a href="./" class="nav-mobile__link primeiro texto">
-            <i class="nav-mobile__icone icone nav-mobile__icone--1"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#sobre" class="nav-mobile__link texto">
-            <i class="nav-mobile__icone  icone nav-mobile__icone--2"></i>
-            <span>Sobre</span>
-          </a>
-        </li>
-        <li>
-          <a href="#para-quem" class="nav-mobile__link texto">
-            <i class="nav-mobile__icone  icone nav-mobile__icone--3"></i>
-            <span>Para quem</span>
-          </a>
-        </li>
-        <li>
-          <a href="#beneficios" class="nav-mobile__link texto">
-            <i class="nav-mobile__icone  icone nav-mobile__icone--4"></i>
-            <span>Benefícios</span>
-          </a>
-        </li>
-        <li>
-          <a href="#como-usar" class="nav-mobile__link texto">
-            <i class="nav-mobile__icone icone nav-mobile__icone--5"></i>
-            <span>Como usar</span>
-          </a>
-        </li>
-      </ul>
+    <ul class="nav-mobile__menu">
+      <li>
+        <a href="./" class="nav-mobile__link primeiro texto">
+          <i class="nav-mobile__icone icone nav-mobile__icone--1"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#sobre" class="nav-mobile__link texto">
+          <i class="nav-mobile__icone  icone nav-mobile__icone--2"></i>
+          <span>Sobre</span>
+        </a>
+      </li>
+      <li>
+        <a href="#para-quem" class="nav-mobile__link texto">
+          <i class="nav-mobile__icone  icone nav-mobile__icone--3"></i>
+          <span>Para quem</span>
+        </a>
+      </li>
+      <li>
+        <a href="#beneficios" class="nav-mobile__link texto">
+          <i class="nav-mobile__icone  icone nav-mobile__icone--4"></i>
+          <span>Benefícios</span>
+        </a>
+      </li>
+      <li>
+        <a href="#como-usar" class="nav-mobile__link texto">
+          <i class="nav-mobile__icone icone nav-mobile__icone--5"></i>
+          <span>Como usar</span>
+        </a>
+      </li>
+    </ul>
   </nav>
   <main>
     <section class="banner-inicial">
       <div class="container">
         <h1 class="banner-inicial__titulo">A plataforma dos campeões</h1>
-        <p class="banner-inicial__subtitulo texto">Plataforma de avaliação da capacidade de leitura de jogo e tomada de decisão do jogador de futebol</p>
-        <a class="banner-inicial__botao botao botao--primario" href="https://login.tacticup.com.br/">Experimente grátis</a>    
+        <p class="banner-inicial__subtitulo texto">Plataforma de avaliação da capacidade de leitura de jogo e tomada de
+          decisão do jogador de futebol</p>
+        <a class="banner-inicial__botao botao botao--primario" href="https://login.tacticup.com.br/">Experimente
+          grátis</a>
       </div>
     </section>
-  
-    <section class="parceiros container">
-  
+
+    <section class="parceiros">
+      <div class="container">
+        <h2 class="parceiros__titulo titulo">Parceiros e clientes</h2>
+        <div class="parceiros__painel">
+          <ul class="parceiros__lista">
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/botafogo-de-futebol-e-regatas.svg" alt="Botafogo de Futebol e Regatas"
+                width="88.75" height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/gremio-foot-ball-porto-alegrense.svg" alt="Grêmio" width="101.25"
+                height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/clube-de-regatas-vasco-da-gama.svg" alt="Vasco da Gama" width="80"
+                height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/esporte-clube-bahia.svg" alt="Esporte Clube Bahia" width="102.5"
+                height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/red-bull-bragantino.svg" alt="Red Bull Bragantino" width="125"
+                height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/everton-de-vinha-del-mar.svg" alt="Everton de Vinha Del Mar"
+                width="98.75" height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/next-academy.svg" alt="Next Academy" width="87.5" height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/eagles-soccer-academy.png" alt="Eagle Soccer Academy" width="92.5"
+                height="100">
+            </li>
+
+            <!-- imagens duplicadas -->
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/botafogo-de-futebol-e-regatas.svg" alt="Botafogo de Futebol e Regatas"
+                width="88.75" height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/gremio-foot-ball-porto-alegrense.svg" alt="Grêmio" width="101.25"
+                height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/clube-de-regatas-vasco-da-gama.svg" alt="Vasco da Gama" width="80"
+                height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/esporte-clube-bahia.svg" alt="Esporte Clube Bahia" width="102.5"
+                height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/red-bull-bragantino.svg" alt="Red Bull Bragantino" width="125"
+                height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/everton-de-vinha-del-mar.svg" alt="Everton de Vinha Del Mar"
+                width="98.75" height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/next-academy.svg" alt="Next Academy" width="87.5" height="100">
+            </li>
+            <li class="parceiros__item">
+              <img src="./assets/img/parceiros/eagles-soccer-academy.png" alt="Eagle Soccer Academy" width="92.5"
+                height="100">
+            </li>
+
+          </ul>
+        </div>
+      </div>
     </section>
-  
+
     <section class="sobre">
       <a id="sobre" href='' class="ancora"></a>
       <div class="container">
-        <h2 class="sobre__titulo titulo">Avaliação da tomada de decisão para alcançar sua melhor performance</h2>
-        <div class="sobre__descricao">
-          <p class="sobre__texto primeiro texto">A TacticUP é uma plataforma que permite avaliar a capacidade tática de jogadores de futebol através de um teste online.</p>
-          <p class="sobre__texto texto">O resultado do teste fornece informações objetivas sobre a capacidade de leitura de jogo e tomada de decisão dos jogadores.</p>
+        <div class="sobre__coluna">
+          <h2 class="sobre__titulo titulo">Avaliação da tomada de decisão para alcançar sua melhor performance</h2>
+          <p class="sobre__texto primeiro texto">A TacticUP é uma plataforma que permite avaliar a capacidade tática de
+            jogadores de futebol através de um teste online.</p>
+          <p class="sobre__texto texto">O resultado do teste fornece informações objetivas sobre a capacidade de leitura
+            de jogo e tomada de decisão dos jogadores.</p>
+          <img class="sobre__imagem-demonstacao sobre__imagem-demonstacao--mobile"
+            src="./assets/img/relatorio-tacticUp.jpg" alt="Demonstração do resultado do teste do TacticUp">
+          <div class="sobre__chamada">
+            <p class="sobre__texto texto">Tenha já um relatório completo por um preço acessível!</p>
+            <a class="sobre__botao botao botao--primario" href="https://login.tacticup.com.br/">Quero experimentar</a>
+          </div>
         </div>
-        <img class="sobre__imagem-demonstacao" src="./assets/img/relatorio-tacticUp.jpg" alt="Demonstração do resultado do teste do TacticUp">
-        <div class="sobre__chamada">
-          <p class="sobre__texto texto">Tenha já um relatório completo por um preço acessível!</p>
-          <a class="sobre__botao botao botao--primario" href="https://login.tacticup.com.br/">Quero experimentar</a>
+
+        <div class="sobre__coluna">
+          <img class="sobre__imagem-demonstacao sobre__imagem-demonstacao--desktop"
+            src="./assets/img/relatorio-tacticUp.jpg" alt="Demonstração do resultado do teste do TacticUp">
         </div>
       </div>
     </section>
-  
+
     <section class="para-quem">
       <a id="para-quem" href='' class="ancora"></a>
       <div class="container">
@@ -147,54 +232,69 @@
           </button>
         </div>
         <div class="para-quem__itens">
-  
+
           <div class="para-quem__item primeiro">
             <img src="./assets/img/para-quem/jogadores.jpg" class="para-quem__ilustracao" width="656" height="437">
             <div class="para-quem__descricao">
               <h3 class="para-quem__titulo--item">Jogadores de Futebol</h3>
-              <p class="texto">Faça o seu teste agora mesmo. Envie os resultados do seu teste para aquele time que sempre sonhou jogar. Crie um card com o seu resultado e compartilhe nas redes sociais.</p>
+              <p class="texto">Faça o seu teste agora mesmo. Envie os resultados do seu teste para aquele time que
+                sempre sonhou jogar. Crie um card com o seu resultado e compartilhe nas redes sociais</p>
             </div>
           </div>
-    
+
           <div class="para-quem__item">
             <img src="./assets/img/para-quem/escolas.jpg" class="para-quem__ilustracao" width="656" height="437">
             <div class="para-quem__descricao">
-              <h3 class="para-quem__titulo--item">Jogadores de Futebol</h3>
-              <p class="texto">Faça o seu teste agora mesmo. Envie os resultados do seu teste para aquele time que sempre sonhou jogar. Crie um card com o seu resultado e compartilhe nas redes sociais.</p>
+              <h3 class="para-quem__titulo--item">Escolas de Futebol</h3>
+              <p class="texto">Ofereça um treinamento orientado para as necessidades individuais dos alunos. Forneça
+                informações
+                objetivas que qualificarão o trabalho dos seus instrutores e tenha como diferencial um feedback objetivo
+                do
+                rendimento dos alunos para seus responsáveis
+              </p>
             </div>
           </div>
-    
+
           <div class="para-quem__item">
             <img src="./assets/img/para-quem/treinadores.jpg" class="para-quem__ilustracao" width="656" height="437">
             <div class="para-quem__descricao">
-              <h3 class="para-quem__titulo--item">Jogadores de Futebol</h3>
-              <p class="texto">Faça o seu teste agora mesmo. Envie os resultados do seu teste para aquele time que sempre sonhou jogar. Crie um card com o seu resultado e compartilhe nas redes sociais.</p>
+              <h3 class="para-quem__titulo--item">Treinadores</h3>
+              <p class="texto">Melhore seus processos através da avaliação tática do TacticUP. Qualifique a formação dos
+                jogadores,
+                potencialize o resultado dos treinamentos e melhore o desempenho do seu processo de seleção de
+                jogadores</p>
             </div>
           </div>
-    
+
           <div class="para-quem__item">
             <img src="./assets/img/para-quem/analistas.jpg" class="para-quem__ilustracao" width="656" height="437">
             <div class="para-quem__descricao">
-              <h3 class="para-quem__titulo--item">Jogadores de Futebol</h3>
-              <p class="texto">Faça o seu teste agora mesmo. Envie os resultados do seu teste para aquele time que sempre sonhou jogar. Crie um card com o seu resultado e compartilhe nas redes sociais.</p>
+              <h3 class="para-quem__titulo--item">Analistas de Desempenho</h3>
+              <p class="texto">Identifique as limitações e potencialidades de leitura de jogo e tomada de decisão dos
+                jogadores e
+                direcione as ações para a melhoria deles com mais efetividade e assertividade em suas ações</p>
             </div>
           </div>
-    
+
           <div class="para-quem__item">
             <img src="./assets/img/para-quem/direcao.jpg" class="para-quem__ilustracao" width="656" height="437">
             <div class="para-quem__descricao">
-              <h3 class="para-quem__titulo--item">Jogadores de Futebol</h3>
-              <p class="texto">Faça o seu teste agora mesmo. Envie os resultados do seu teste para aquele time que sempre sonhou jogar. Crie um card com o seu resultado e compartilhe nas redes sociais.</p>
+              <h3 class="para-quem__titulo--item">Direção Técnica</h3>
+              <p class="texto">Acompanhe o desempenho das comissões técnicas para desenvolvimento dos jogadores, conheça
+                o perfil
+                de leitura de jogo e tomada de decisão para todas as categorias e encontre os atletas com o perfil que
+                estão buscando para compor suas equipes</p>
             </div>
           </div>
         </div>
         <div class="wrapper">
 
-          <a class="para-quem__botao--cta botao botao--primario" href="https://login.tacticup.com.br/">Experimente grátis</a>
+          <a class="para-quem__botao--cta botao botao--primario" href="https://login.tacticup.com.br/">Experimente
+            grátis</a>
         </div>
       </div>
     </section>
-  
+
     <section class="beneficios">
       <a id="beneficios" href='' class="ancora"></a>
       <div class="container">
@@ -202,241 +302,318 @@
         <div class="beneficios__cards">
           <div class="beneficios__card">
             <i class="beneficios__icone icone  beneficios__icone--card-1"></i>
-            <p class="texto">Tenha dados objetivos sobre a leitura de jogo e tomada de decisão cientificamente comprovados</p>
+            <p class="texto">Tenha dados objetivos sobre a leitura de jogo e tomada de decisão cientificamente
+              comprovados</p>
           </div>
-          
+
           <div class="beneficios__card">
             <i class="beneficios__icone icone  beneficios__icone--card-2"></i>
             <p class="texto">Monitore a evolução de cada jogador e o impacto de seu desempenho no grupo</p>
           </div>
-          
+
           <div class="beneficios__card">
             <i class="beneficios__icone icone  beneficios__icone--card-3"></i>
             <p class="texto">Encontre os pontos fracos de cada atleta e elabore treinos personalizados</p>
           </div>
-          
+
           <div class="beneficios__card">
             <i class="beneficios__icone icone  beneficios__icone--card-4"></i>
             <p class="texto">Avalie o resultado de um jogador ou de um grupo de jogadores</p>
           </div>
-  
+
           <div class="beneficios__card">
             <i class="beneficios__icone icone  beneficios__icone--card-5"></i>
             <p class="texto">Tenha acesso imediato aos relatórios após a realização dos testes</p>
           </div>
         </div>
-  
+
         <a class="beneficios__botao botao botao--primario" href="https://login.tacticup.com.br/">Experimente grátis</a>
       </div>
     </section>
-  
+
     <section class="cta-yt">
       <div class="container">
         <h2 class="cta-yt__titulo titulo">Sucesso comprovado por quem usa</h2>
-        <div class='cta-yt__video embed-container'><iframe src='https://www.youtube.com/embed/Ke8r0wSxkOA' frameborder='0' allowfullscreen></iframe></div>
+        <div class='cta-yt__video embed-container'><iframe src='https://www.youtube.com/embed/Ke8r0wSxkOA'
+            frameborder='0' allowfullscreen></iframe></div>
         <i class="cta-yt__logo icone"></i>
-        <p class="cta-yt__texto texto">Assista às entrevistas de diversos profissionais do futebol que já utilizam a ferramenta e veja como eles têm se beneficiado.</p>
+        <p class="cta-yt__texto texto">Assista às entrevistas de diversos profissionais do futebol que já utilizam a
+          ferramenta e veja como eles têm se beneficiado.</p>
         <div>
           <a class="cta-yt__botao botao botao--secundario" href="#">Palestras gratuitas</a>
         </div>
       </div>
     </section>
-  
+
     <section class="tutorial">
       <a id="como-usar" href='' class="ancora"></a>
       <div class="container">
 
         <h2 class="tutorial__titulo titulo">Entenda como utilizar o TacticUp</h2>
         <div class="tutorial__botoes">
-          <button class="tutorial__botao ativo primeiro">Jogador</button>
-          <button class="tutorial__botao">Clube</button>
+          <a href="#jogador" class="tutorial__botao botao ativo primeiro">Jogador</a>
+          <a href="#clube" class="tutorial__botao botao">Clube</a>
         </div>
         <div class="tutorial__listas">
-          <ul class="tutorial__lista">
-            <h3 class="tutorial__titulo--lista titulo">Jogador</h3>
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone  tutorial__icone--1"></i>
-          <p class="texto">Cadastre-se gratuitamente na plataforma</p>
-        </li>
+          <section id='jogador' class="tutorial__secao ativo">
+            <ul class="tutorial__lista">
+              <h3 class="tutorial__titulo--lista titulo">Jogador</h3>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone  tutorial__icone--1"></i>
+                <p class="texto">Cadastre-se gratuitamente na plataforma</p>
+              </li>
 
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone tutorial__icone--2"></i>
-          <p class="texto">Realize o teste em um computador ou tablet <span class="tutorial__obs">OBS: O tamanho mínimo da tela deve ser 10 polegadas</span></p>
-        </li>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone tutorial__icone--2"></i>
+                <p class="texto">Realize o teste em um computador ou tablet <span class="tutorial__obs">OBS: O tamanho
+                    mínimo da tela deve ser 10 polegadas</span></p>
+              </li>
 
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone tutorial__icone--3"></i>
-          <p class="texto">Tenha acesso gratuitamente ao seu relatório resumido</p>
-        </li>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone tutorial__icone--3"></i>
+                <p class="texto">Tenha acesso gratuitamente ao seu relatório resumido</p>
+              </li>
 
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone tutorial__icone--4"></i>
-          <p class="texto">Pague seu relatório</p>
-        </li>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone tutorial__icone--4"></i>
+                <p class="texto">Pague seu relatório</p>
+              </li>
 
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone tutorial__icone--6"></i>
-          <p class="texto">Tenha acesso ao seu relatório completo</p>
-        </li>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone tutorial__icone--6"></i>
+                <p class="texto">Tenha acesso ao seu relatório completo</p>
+              </li>
 
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone tutorial__icone--7"></i>
-          <p class="texto">Envie os resultados do seu teste para um clube cadastrado na plataforma</p>
-        </li>
-          </ul>
-        
-          <ul class="tutorial__lista">
-            <h3 class="tutorial__titulo--lista titulo">Clube</h3>
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone  tutorial__icone--1"></i>
-          <p class="texto">Cadastre seu clube gratuitamente na plataforma</p>
-        </li>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone tutorial__icone--7"></i>
+                <p class="texto">Envie os resultados do seu teste para um clube cadastrado na plataforma</p>
+              </li>
+            </ul>
+            <div class='tutorial__video embed-container'><iframe src='https://www.youtube.com/embed/EuWTBYKfp60'
+                frameborder='0' allowfullscreen></iframe></div>
+            <div>
+          </section>
 
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone tutorial__icone--2"></i>
-          <p class="texto"> Solicite aos jogadores que se cadastrem ou realize o cadastro deles</p>
-        </li>
+          <section id='clube' class="tutorial__secao">
+            <ul class="tutorial__lista">
+              <h3 class="tutorial__titulo--lista titulo">Clube</h3>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone  tutorial__icone--1"></i>
+                <p class="texto">Cadastre seu clube gratuitamente na plataforma</p>
+              </li>
 
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone tutorial__icone--3"></i>
-          <p class="texto">Crie as categorias ou turmas da sua instituição (ex.: sub-11) e adicione os jogadores</p>
-        </li>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone tutorial__icone--1"></i>
+                <p class="texto"> Solicite aos jogadores que se cadastrem ou realize o cadastro deles</p>
+              </li>
 
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone tutorial__icone--4"></i>
-          <p class="texto">Crie a bateria encaminhando os testes aos jogadores</p>
-        </li>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone tutorial__icone--8"></i>
+                <p class="texto">Crie as categorias ou turmas da sua instituição (ex.: sub-11) e adicione os jogadores
+                </p>
+              </li>
 
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone tutorial__icone--5"></i>
-          <p class="texto">Receba os testes realizados pelos jogadores</p>
-        </li>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone tutorial__icone--7"></i>
+                <p class="texto">Crie a bateria encaminhando os testes aos jogadores</p>
+              </li>
 
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone tutorial__icone--6"></i>
-          <p class="texto">Libere os testes com os créditos adquiridos</p>
-        </li>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone tutorial__icone--5"></i>
+                <p class="texto">Receba os testes realizados pelos jogadores</p>
+              </li>
 
-        <li class="tutorial__item">
-          <i class="tutorial__icone icone tutorial__icone--7"></i>
-          <p class="texto">Acesse os relatórios individuais e coletivos dos seus atletas</p>
-        </li>
-          </ul>
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone tutorial__icone--4"></i>
+                <p class="texto">Libere os testes com os créditos adquiridos</p>
+              </li>
+
+              <li class="tutorial__item">
+                <i class="tutorial__icone icone tutorial__icone--6"></i>
+                <p class="texto">Acesse os relatórios individuais e coletivos dos seus atletas</p>
+              </li>
+            </ul>
+
+            <div class='tutorial__video embed-container'><iframe src='https://www.youtube.com/embed/8eJFzpMnzp8'
+                frameborder='0' allowfullscreen></iframe></div>
+            <div>
+          </section>
         </div>
-    
+
         <div class="tutorial__yt">
-          <div class='tutorial__video embed-container'><iframe src='https://www.youtube.com/embed/EuWTBYKfp60' frameborder='0' allowfullscreen></iframe></div>
-          <div>
-            <p class="texto">Visite o canal do youtube da TacticUP para ter acesso a mais tutoriais de como utilizar a plataforma.</p>
-            <a class="botao botao--secundario" href="#">Conheça a plataforma</a>
-          </div>
+          <p class="texto">Visite o canal do youtube da TacticUP para ter acesso a mais tutoriais de como utilizar a
+            plataforma</p>
+          <a class="botao botao--secundario" href="#">Conheça a plataforma</a>
         </div>
       </div>
+      </div>
     </section>
-  
+
     <section class="cta-tu">
       <div class="container">
         <i class="cta-tu__logo icone"></i>
         <h2 class="titulo cta-tu__titulo">O melhor caminho para lapidar atletas</h2>
-        <p class="cta-tu__subtitulo texto">Nossa plataforma permite que o jogador conheça melhor e potencialize suas habilidades. Não perca tempo, faça um teste!</p>
+        <p class="cta-tu__subtitulo texto">Nossa plataforma permite que o jogador conheça melhor e potencialize suas
+          habilidades. Não perca tempo, faça um teste!</p>
         <a class="cta-tu__botao botao botao--primario" href="https://login.tacticup.com.br/">Experimente grátis</a>
       </div>
     </section>
-  
+
     <section class="metodologia">
       <a id="metodologia" href='' class="ancora"></a>
       <div class="container">
 
         <h2 class="titulo metodologia__titulo">Nossa metodologia</h2>
-        <p class="metodologia__subtitulo texto">A TacticUP avalia a capacidade de leitura de jogo e tomada de decisão de um jogador através de situações de jogo reais das principais competições de futebol do mundo. São avaliados os 12 princípios a seguir:</p>
+        <p class="metodologia__subtitulo texto">A TacticUP avalia a capacidade de leitura de jogo e tomada de decisão de
+          um jogador através de situações de jogo reais das principais competições de futebol do mundo. São avaliados os
+          12 princípios a seguir:</p>
         <div class="wrapper">
           <div class="metodologia__principios">
             <h3 class="metodologia__titulo--principio">Princípios ofensivos</h3>
             <div class="container--acordeao">
-              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Penetração</span></button>
-                <div class="metodologia__painel">
-                  <p class="texto">Laedit p minus ex dulcedo me CustodIA usus aut ornare e ante mirabilia ex nemo intentio m offecerunt</p>
-                </div>
+              <button class="metodologia__acordeao"><span
+                  class="metodologia__titulo--acordeao">Penetração</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/penetracao.jpg"
+                  alt="Ilustração de uma penetração em um jogo de futebol">
+                <p class="texto">Ação de avançar com a bola para a linha de fundo ou gol, ou seja, diminuindo a
+                  distânciaentre quem está com a bola e o gol</p>
+              </div>
             </div>
-    
+
             <div class="container--acordeao">
-              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Cobertura ofensiva</span></button>
-                <div class="metodologia__painel">
-                  <p class="texto">Y DcfensIO debile p provocatus ab usilata se quis d maxime ac reddant ex eu nugator egestam ea provident ab amet fusce rem saevientis secretarius eu interim ea saepe. Cum praesidia ac 22 voluptatum w doming</p>
-                </div>
+              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Cobertura
+                  ofensiva</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/cobertura-ofensiva.jpg"
+                  alt="Ilustração de uma cobertura ofensiva em um jogo de futebol">
+                <p class="texto">Ação de aproximação ou distanciamento dequem está com a bola, de forma que
+                  possapermitir passar a bola com segurança,velocidade e dar ritmo de jogo (dentro docentro de jogo)</p>
+              </div>
             </div>
-    
+
             <div class="container--acordeao">
-              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Espaço com bola</span></button>
-                <div class="metodologia__painel">
-                  <p class="texto">Ante torquent saepe w abdicatione d usus postscripta</p>
-                </div>
+              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Espaço com
+                  bola</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/espaco-com-bola.jpg"
+                  alt="Ilustração do espaço com bola em um jogo de futebol">
+                <p class="texto">Ação de movimentação com a bola emdireção à linha lateral ou ao próprio gol, paraganhar
+                  espaço e tempo para dar sequência ao jogo</p>
+              </div>
             </div>
-    
+
             <div class="container--acordeao">
-              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Espaço sem bola</span></button>
-                <div class="metodologia__painel">
-                  <p class="texto">Ante torquent saepe w abdicatione d usus postscripta</p>
-                </div>
+              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Espaço sem
+                  bola</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/espaco-sem-bola.jpg"
+                  alt="Ilustração do espaço sem bola em um jogo de futebol">
+                <p class="texto">Ação de movimentação à frente da linha da bola e antes da última linha defensiva (fora
+                  do centro de jogo) de forma a permitir um passemais longo e em profundidade</p>
+              </div>
             </div>
-    
+
             <div class="container--acordeao">
-              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Mobilidade</span></button>
-                <div class="metodologia__painel">
-                  <p class="texto">Ante torquent saepe w abdicatione d usus postscripta</p>
-                </div>
+              <button class="metodologia__acordeao"><span
+                  class="metodologia__titulo--acordeao">Mobilidade</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/mobilidade.jpg"
+                  alt="Ilustração de mobilidade em um jogo de futebol">
+                <p class="texto">Ação de movimentação nas costas da última linha de defesa</p>
+              </div>
             </div>
-    
+
             <div class="container--acordeao">
-              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Unidade ofensiva</span></button>
-                <div class="metodologia__painel">
-                  <p class="texto">Ante torquent saepe w abdicatione d usus postscripta</p>
-                </div>
+              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Unidade
+                  ofensiva</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/unidade-ofensiva.jpg"
+                  alt="Ilustração de uma unidade ofensiva em um jogo de futebol">
+                <p class="texto">Ação de organização das linhas de ataquemantendo a unidade da equipe e permitindo jogar
+                  mais coletivamente</p>
+              </div>
             </div>
           </div>
-    
+
           <div class="metodologia__principios">
             <h3 class="metodologia__titulo--principio">Princípios defensivos</h3>
-            
+
             <div class="container--acordeao">
-              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Contenção</span></button>
-                <div class="metodologia__painel">
-                  <p class="texto">Ante torquent saepe w abdicatione d usus postscripta</p>
-                </div>
+              <button class="metodologia__acordeao"><span
+                  class="metodologia__titulo--acordeao">Contenção</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/contencao.jpg"
+                  alt="Ilustração de uma contenção em um jogo de futebol">
+                <p class="texto">Ação que visa retardar diretamente as açõesde quem está com a bola em direção ao gol
+                </p>
+              </div>
             </div>
-            
+
             <div class="container--acordeao">
-              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Cobertura defensiva</span></button>
-                <div class="metodologia__painel">
-                  <p class="texto">Ante torquent saepe w abdicatione d usus postscripta</p>
-                </div>
+              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Cobertura
+                  defensiva</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/cobertura-defensiva.jpg"
+                  alt="Ilustração de uma cobertura defensiva em um jogo de futebol">
+                <p class="texto">Ação de ajuda defensiva a(o) jogador(a) que realiza a contenção (retardo) à quem está
+                  com a bola</p>
+              </div>
             </div>
-            
+
             <div class="container--acordeao">
-              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Equilíbrio de recuperação</span></button>
-                <div class="metodologia__painel">
-                  <p class="texto">Ante torquent saepe w abdicatione d usus postscripta</p>
-                </div>
+              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Equilíbrio de
+                  recuperação</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/equilibrio-de-recuperacao.jpg"
+                  alt="Ilustração do equilíbrio de recuperação em um jogo de futebol">
+                <p class="texto">Ação de movimentar próximo e atrás da linhada bola, através de pressão em quem estácom
+                  a bola, para recuperação da posse oucobertura de eventuais linhas de passe atrásda linha da bola</p>
+              </div>
             </div>
-            
+
             <div class="container--acordeao">
-              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Concentração</span></button>
-                <div class="metodologia__painel">
-                  <p class="texto">Ante torquent saepe w abdicatione d usus postscripta</p>
-                </div>
+              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Equilíbrio
+                  defensivo</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/equilibrio-defensivo.jpg"
+                  alt="Ilustração do equilíbrio defensivo em um jogo de futebol">
+                <p class="texto">Ação de movimentar em zonas do campo edar estabilidade defensiva à equipe
+                  (permitirmelhor equilíbrio defensivo)</p>
+              </div>
             </div>
-    
+
             <div class="container--acordeao">
-              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Unidade defensiva</span></button>
-                <div class="metodologia__painel">
-                  <p class="texto">Ante torquent saepe w abdicatione d usus postscripta</p>
-                </div>
+              <button class="metodologia__acordeao"><span
+                  class="metodologia__titulo--acordeao">Concentração</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/concentracao.jpg"
+                  alt="Ilustração da concentração em um jogo de futebol">
+                <p class="texto">Ações de movimentação de proteção em zonas de risco de avanço direto da equipe
+                  adversária
+                  ao gol</p>
+              </div>
+            </div>
+
+            <div class="container--acordeao">
+              <button class="metodologia__acordeao"><span class="metodologia__titulo--acordeao">Unidade
+                  defensiva</span></button>
+              <div class="metodologia__painel">
+                <img class="metodologia__ilustracao" src="./assets/img/metodologia/unidade-defensiva.jpg"
+                  alt="Ilustração de uma unidade defensiva em um jogo de futebol">
+                <p class="texto">Ações de organização das linhas de defesa mantendo a unidade da equipe e permitindo
+                  obter
+                  mais proteção defensiva</p>
+              </div>
             </div>
           </div>
         </div>
         <div class="metodologia__detalhes">
-          <p class="primeiro metodologia__texto texto">Sugerimos que a avaliação seja refeita após 25 seções de treinamento, aproximadamente, para acompanhar o desenvolvimento dos jogadores e poder utilizar informações atualizadas para qualificação do trabalho realizado.</p>
-          <p class="metodologia__texto texto">Mais detalhes sobre a metodologia e como interpretar os resultados estão disponíveis no e-Book:</p>
+          <p class="primeiro metodologia__texto texto">Sugerimos que a avaliação seja refeita após 25 seções de
+            treinamento, aproximadamente, para acompanhar o desenvolvimento dos jogadores e poder utilizar informações
+            atualizadas para qualificação do trabalho realizado.</p>
+          <p class="metodologia__texto texto">Mais detalhes sobre a metodologia e como interpretar os resultados estão
+            disponíveis no e-Book:</p>
         </div>
         <div class="metodologia__ebook">
           <img src="" alt="">
@@ -444,12 +621,12 @@
         </div>
       </div>
     </section>
-  
+
     <section class="pesquisa">
       <a id="pesquisa" href='' class="ancora"></a>
       <div class="container">
         <h2 class="pesquisa__titulo titulo">Metodologia validada científicamente</h2>
-        
+
         <div class="pesquisa__colaboradores">
           <div class="pesquisa__colaborador">
             <h3><span class="maiusculo">Nupef</span></h3>
@@ -457,21 +634,27 @@
               <i class="pesquisa__icone icone pesquisa__icone--nupef"></i>
               <i class="pesquisa__icone icone pesquisa__icone--ufv"></i>
             </div>
-            <p class="primeiro pesquisa__texto texto">O NUPEF – Núcleo de Pesquisas e Estudos em Futebol da Universidade Federal de Viçosa – é a parceira oficial da TacticUP. Nosso contrato de cooperação técnica garante transferência de conhecimento e evolução constante da metodologia científica.</p>
-            <p class="pesquisa__texto texto">Veja os artigos científicos publicados sobre a metodologia científica em <a href="#">www.nucleofutebol.ufv.br</a></p>
+            <p class="primeiro pesquisa__texto texto">O NUPEF – Núcleo de Pesquisas e Estudos em Futebol da Universidade
+              Federal de Viçosa – é a parceira oficial da TacticUP. Nosso contrato de cooperação técnica garante
+              transferência de conhecimento e evolução constante da metodologia científica.</p>
+            <p class="pesquisa__texto texto">Veja os artigos científicos publicados sobre a metodologia científica em <a
+                class="pesquisa__link" href="https://www.nucleofutebol.ufv.br">www.nucleofutebol.ufv.br</a></p>
           </div>
-      
+
           <div class="pesquisa__colaborador">
             <h3>Professor Israel</h3>
             <i class="pesquisa__icone pesquisa__icone--professor icone"></i>
-            <p class="primeiro pesquisa__texto texto">O Professor Israel Teoldo da Costa é PhD em Ciências do Esporte pela Brunel University London, coordenador do NUPEF e da Especialização em Futebol da UFV, consultor da CBF e da CONMEBOL, autor do livro "Para um Futebol jogado com ideias", além de idealizador da metodologia da TacticUP.</p>
+            <p class="primeiro pesquisa__texto texto">O Professor Israel Teoldo da Costa é PhD em Ciências do Esporte
+              pela Brunel University London, coordenador do NUPEF e da Especialização em Futebol da UFV, consultor da
+              CBF e da CONMEBOL, autor do livro "Para um Futebol jogado com ideias", além de idealizador da metodologia
+              da TacticUP</p>
             <img src="" alt="">
             <img src="" alt="">
           </div>
         </div>
       </div>
     </section>
-  
+
     <section class="equipe">
       <a id="equipe" href='' class="ancora"></a>
       <div class="container">
@@ -481,18 +664,20 @@
             <i class="equipe__foto equipe__foto--1"></i>
             <div>
               <h4 class="equipe__nome">Paulo Márcio</h4>
-              <p class="equipe__sobre texto"> CEO – MBA em Gestão Competitiva e 20 anos de experiência em gestão e inovação</p>
+              <p class="equipe__sobre texto"> CEO – MBA em Gestão Competitiva e 20 anos de experiência em gestão e
+                inovação</p>
             </div>
           </li>
-  
+
           <li class="equipe__colaborador">
             <i class="equipe__foto equipe__foto--2"></i>
             <div>
               <h4 class="equipe__nome">Guilherme Machado</h4>
-              <p class="equipe__sobre texto">Mestre em Educação Física pela UFV, com experiência como treinador e coordenador em escolas e clubes de futebol no Brasil e exterior</p>
+              <p class="equipe__sobre texto">Mestre em Educação Física pela UFV, com experiência como treinador e
+                coordenador em escolas e clubes de futebol no Brasil e exterior</p>
             </div>
           </li>
-  
+
           <li class="equipe__colaborador">
             <i class="equipe__foto equipe__foto--3"></i>
             <div>
@@ -500,15 +685,16 @@
               <p class="equipe__sobre texto">Mestrado em Ciência da Computação e 20 anos de experiência</p>
             </div>
           </li>
-  
+
           <li class="equipe__colaborador">
             <i class="equipe__foto equipe__foto--4"></i>
             <div>
               <h4 class="equipe__nome">Daiane de Freitas</h4>
-              <p class="equipe__sobre texto">Doutora em Ciências do Desporto pela Faculdade de Desporto da Universidade do Porto, Portugal</p>
+              <p class="equipe__sobre texto">Doutora em Ciências do Desporto pela Faculdade de Desporto da Universidade
+                do Porto, Portugal</p>
             </div>
           </li>
-  
+
           <li class="equipe__colaborador">
             <i class="equipe__foto equipe__foto--5"></i>
             <div>
@@ -516,7 +702,7 @@
               <p class="equipe__sobre texto">Graduada em Ciência da Computação pela UFV</p>
             </div>
           </li>
-  
+
           <li class="equipe__colaborador">
             <i class="equipe__foto equipe__foto--6"></i>
             <div>
@@ -524,7 +710,7 @@
               <p class="equipe__sobre texto">Graduando em Computação pela UFV</p>
             </div>
           </li>
-  
+
           <li class="equipe__colaborador equipe__colaborador--cientec">
             <i class="equipe__foto equipe__foto--7"></i>
             <div>
@@ -557,34 +743,38 @@
         <p class="rodape__titulo texto">Contato</p>
         <a class="rodape__link primeiro texto" href="mailto:contato@tacticup.com.br">contato@tacticup.com.br</a>
         <div class="rodape__redes-sociais">
-          <img class="rodape__rede-social" src="./assets/img/rede-social.png" alt="Facebook">
-          <img class="rodape__rede-social" src="./assets/img/rede-social.png" alt="Instagram">
-          <img class="rodape__rede-social" src="./assets/img/rede-social.png" alt="Linkedin">
+          <img class="rodape__rede-social" src="./assets/img/redes-sociais/facebook.svg" alt="Facebook">
+          <img class="rodape__rede-social" src="./assets/img/redes-sociais/youtube.svg" alt="Youtube">
+          <img class="rodape__rede-social" src="./assets/img/redes-sociais/instagram.svg" alt="Instagram">
         </div>
       </nav>
       <nav class="rodape__nav">
         <i class="rodape__logo icone"></i>
         <p class="rodape__texto texto">© 2021 TacticUP - Avaliação Tática de Futebol</p>
       </nav>
-      
+
       <form class="rodape__form">
         <input type="radio" name="idioma" id="portugues" value="portugues">
         <label for="portugues">Português</label>
-  
+
         <input type="radio" name="idioma" id="english" value="english">
         <label for="english">English</label>
-  
+
         <input type="radio" name="idioma" id="spanish" value="spanish">
         <label for="spanish">Spanish</label>
       </form>
     </div>
   </footer>
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Titillium+Web:wght@700&display=swap" rel="stylesheet"> 
-<script src="assets/js/cabecalho.js"></script>
-<script src="assets/js/dropdown.js"></script>
-<script src="assets/js/para-quem.js"></script>
-<script src="assets/js/acordeao.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Titillium+Web:wght@700&display=swap"
+    rel="stylesheet">
+  <script src="assets/js/cabecalho.js"></script>
+  <script src="assets/js/parceiros.js"></script>
+  <script src="assets/js/dropdown.js"></script>
+  <script src="assets/js/para-quem.js"></script>
+  <script src="assets/js/tutorial.js"></script>
+  <script src="assets/js/acordeao.js"></script>
 </body>
+
 </html>
