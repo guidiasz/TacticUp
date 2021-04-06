@@ -1,5 +1,6 @@
 let root = document.documentElement;
-const parceiros = document.querySelectorAll('.parceiros__item');
+const listaParceiros = document.querySelector('.parceiros__lista');
+const parceiros = listaParceiros.querySelectorAll('.parceiros__item');
 
 const tamanhoTela = window.matchMedia('(min-width: 700px)');
 
@@ -13,7 +14,14 @@ function setLarguraParceiros() {
     larguraTotal += parceiros[i].getBoundingClientRect().width;
   }
 
-  root.style.setProperty('--tamanho-lista-de-parceiros', -larguraTotal + "px");
+  if (tamanhoTela.matches) {
+    root.style.setProperty('--tamanho-lista-de-parceiros', -larguraTotal + "px");
+    listaParceiros.style.animation = 'scrollDesktop 14s infinite linear';
+  }
+  else {
+    root.style.setProperty('--tamanho-lista-de-parceiros-mobile', -larguraTotal + "px");
+    listaParceiros.style.animation = 'scrollMobile 14s infinite linear';
+  }
 }
 
 window.addEventListener('load', setLarguraParceiros);

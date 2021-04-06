@@ -1,7 +1,6 @@
 :root{
-  --altura-parceiro: 5rem;
-  --margin-parceiro: 2rem;
-  --tamanho-lista-de-parceiros: 0px;
+  --tamanho-lista-de-parceiros: 0;
+  --tamanho-lista-de-parceiros-mobile: 0;
 }
 
 .parceiros {
@@ -24,7 +23,6 @@
   display: flex;
   align-items:flex-start;
   flex-wrap: nowrap;
-  animation: scroll 14s infinite linear;
 }
 
 .parceiros__item {
@@ -42,9 +40,15 @@
   margin-right: 2rem;
 }
 
-@keyframes scroll {
+@keyframes scrollDesktop {
   to {
     transform: translateX( var(--tamanho-lista-de-parceiros) );
+  }
+}
+
+@keyframes scrollMobile {
+  to {
+    transform: translateX( var(--tamanho-lista-de-parceiros-mobile) );
   }
 }
 

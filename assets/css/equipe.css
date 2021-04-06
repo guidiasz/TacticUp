@@ -69,16 +69,16 @@
 
 @media (min-width: 960px) {
   .equipe__colaboradores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid; /* 1 */
+    grid-template-columns: repeat(auto-fill, 265px); /* 2 */
+    grid-gap: 2rem 0;
+    justify-content: space-between; /* 4 */
   }
 
   .equipe__colaborador {
     display: block;
     text-align: center;
     max-width: 265px;
-    margin-bottom: 32px;
   }
 
   .equipe__colaborador + .equipe__colaborador {
