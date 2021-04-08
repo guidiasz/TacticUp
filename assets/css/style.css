@@ -116,6 +116,10 @@ h1 {
   visibility: hidden;
 }
 
+.esconde--mobile {
+  display: none;
+}
+
 @media (min-width: 700px) {
   html {
     font-size: 20px;

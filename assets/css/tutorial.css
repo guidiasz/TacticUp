@@ -52,6 +52,7 @@
 
 .tutorial__item {
   display: flex;
+  align-items: center;
 }
 
 .tutorial__item + .tutorial__item {

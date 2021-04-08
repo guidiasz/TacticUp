@@ -57,8 +57,9 @@
         </div>
       </div>
       <div class="cabecalho__botoes--pc">
-        <a class="cabecalho__botao botao botao--secundario" href="#">Login do jogador</a>
-        <a class="cabecalho__botao cabecalho__botao--clube botao" href="#">Login do clube</a>
+        <a class="cabecalho__botao botao botao--secundario" href="https://login.tacticup.com.br/">Login do jogador</a>
+        <a class="cabecalho__botao cabecalho__botao--clube botao"
+          href="https://login.tacticup.com.br/#/?redirect=/choice">Login do clube</a>
       </div>
     </div>
   </header>
@@ -101,7 +102,8 @@
         <h1 class="banner-inicial__titulo">A plataforma dos campeões</h1>
         <p class="banner-inicial__subtitulo texto">Plataforma de avaliação da capacidade de leitura de jogo e tomada de
           decisão do jogador de futebol</p>
-        <a class="banner-inicial__botao botao botao--primario" href="https://login.tacticup.com.br/">Experimente
+        <a class="banner-inicial__botao botao botao--primario"
+          href="https://login.tacticup.com.br/#/register/user">Experimente
           grátis</a>
       </div>
     </section>
@@ -186,21 +188,41 @@
       <div class="container">
         <div class="sobre__coluna">
           <h2 class="sobre__titulo titulo">Avaliação da tomada de decisão para alcançar sua melhor performance</h2>
+
           <p class="sobre__texto primeiro texto">A TacticUP é uma plataforma que permite avaliar a capacidade tática de
             jogadores de futebol através de um teste online.</p>
           <p class="sobre__texto texto">O resultado do teste fornece informações objetivas sobre a capacidade de leitura
             de jogo e tomada de decisão dos jogadores.</p>
-          <img class="sobre__imagem-demonstacao sobre__imagem-demonstacao--mobile"
-            src="./assets/img/relatorio-tacticUp.jpg" alt="Demonstração do resultado do teste do TacticUp">
+
+          <div class="sobre__demonstracao esconde--desktop">
+
+            <div class="sobre__botoes">
+              <a href="#imgJogador" class="sobre__botao botao ativo primeiro">Jogador</a>
+              <a href="#imgClube" class="sobre__botao botao">Clube</a>
+            </div>
+
+            <img id="imgJogador" class="sobre__imagem-demonstracao ativo" src="./assets/img/relatorio-tacticUp.jpg"
+              alt="Demonstração do resultado do teste do TacticUp">
+            <img id="imgClube" class="sobre__imagem-demonstracao" src="./assets/img/relatorio-clube-tacticUp.jpg"
+              alt="Demonstração do resultado do teste do TacticUp">
+          </div>
+
           <div class="sobre__chamada">
             <p class="sobre__texto texto">Tenha já um relatório completo por um preço acessível!</p>
-            <a class="sobre__botao botao botao--primario" href="https://login.tacticup.com.br/">Quero experimentar</a>
+            <a class="botao botao--primario" href="https://login.tacticup.com.br/#/register/user">Quero
+              experimentar</a>
           </div>
         </div>
 
-        <div class="sobre__coluna">
-          <img class="sobre__imagem-demonstacao sobre__imagem-demonstacao--desktop"
-            src="./assets/img/relatorio-tacticUp.jpg" alt="Demonstração do resultado do teste do TacticUp">
+        <div class="sobre__coluna esconde--mobile">
+          <div class="sobre__botoes">
+            <a href="#imgJogadorPC" class="sobre__botao botao ativo primeiro">Jogador</a>
+            <a href="#imgClubePC" class="sobre__botao botao">Clube</a>
+          </div>
+          <img id="imgJogadorPC" class="sobre__imagem-demonstracao ativo" src="./assets/img/relatorio-tacticUp.jpg"
+            alt="Demonstração do resultado do teste do TacticUp">
+          <img id="imgClubePC" class="sobre__imagem-demonstracao" src="./assets/img/relatorio-clube-tacticUp.jpg"
+            alt="Demonstração do resultado do teste do TacticUp">
         </div>
       </div>
     </section>
@@ -299,7 +321,8 @@
         </div>
         <div class="wrapper">
 
-          <a class="para-quem__botao--cta botao botao--primario" href="https://login.tacticup.com.br/">Experimente
+          <a class="para-quem__botao--cta botao botao--primario"
+            href="https://login.tacticup.com.br/#/register/user">Experimente
             grátis</a>
         </div>
       </div>
@@ -337,7 +360,8 @@
           </div>
         </div>
 
-        <a class="beneficios__botao botao botao--primario" href="https://login.tacticup.com.br/">Experimente grátis</a>
+        <a class="beneficios__botao botao botao--primario"
+          href="https://login.tacticup.com.br/#/register/user">Experimente grátis</a>
       </div>
     </section>
 
@@ -350,7 +374,9 @@
         <p class="cta-yt__texto texto">Assista às entrevistas de diversos profissionais do futebol que já utilizam a
           ferramenta e veja como eles têm se beneficiado.</p>
         <div>
-          <a class="cta-yt__botao botao botao--secundario" href="#">Palestras gratuitas</a>
+          <a class="cta-yt__botao botao botao--secundario"
+            href="https://youtube.com/playlist?list=PLXffyTWCafe5hrP9VsHq-zM496FS0-j1n" target="_blank">Palestras
+            gratuitas</a>
         </div>
       </div>
     </section>
@@ -453,7 +479,8 @@
         <div class="tutorial__yt">
           <p class="texto">Visite o canal do youtube da TacticUP para ter acesso a mais tutoriais de como utilizar a
             plataforma</p>
-          <a class="botao botao--secundario" href="#">Conheça a plataforma</a>
+          <a class="botao botao--secundario" href="https://youtube.com/playlist?list=PLXffyTWCafe5LCdXaF4vXX7oLuejW1QRx"
+            target="_blank">Conheça a plataforma</a>
         </div>
       </div>
       </div>
@@ -462,10 +489,12 @@
     <section class="cta-tu">
       <div class="container">
         <i class="cta-tu__logo icone"></i>
-        <h2 class="titulo cta-tu__titulo">O melhor caminho para lapidar atletas</h2>
-        <p class="cta-tu__subtitulo texto">Nossa plataforma permite que o jogador conheça melhor e potencialize suas
-          habilidades. Não perca tempo, faça um teste!</p>
-        <a class="cta-tu__botao botao botao--primario" href="https://login.tacticup.com.br/">Experimente grátis</a>
+        <h2 class="titulo cta-tu__titulo">Disponível em vários idiomas</h2>
+        <p class="cta-tu__subtitulo texto">Do português ao chinês, nossa plataforma está disponível em várias línguas:
+        </p>
+        <p class="cta-tu__paises">🇧🇷 🇺🇸 🇪🇸 🇨🇳 🇮🇹 🇦🇱 🇮🇷</p>
+        <a class="cta-tu__botao botao botao--primario" href="https://login.tacticup.com.br/#/register/user">Experimente
+          grátis</a>
       </div>
     </section>
 
@@ -487,7 +516,7 @@
                 <img class="metodologia__ilustracao" src="./assets/img/metodologia/penetracao.jpg"
                   alt="Ilustração de uma penetração em um jogo de futebol">
                 <p class="texto">Ação de avançar com a bola para a linha de fundo ou gol, ou seja, diminuindo a
-                  distânciaentre quem está com a bola e o gol</p>
+                  distância entre quem está com a bola e o gol</p>
               </div>
             </div>
 
@@ -497,8 +526,9 @@
               <div class="metodologia__painel">
                 <img class="metodologia__ilustracao" src="./assets/img/metodologia/cobertura-ofensiva.jpg"
                   alt="Ilustração de uma cobertura ofensiva em um jogo de futebol">
-                <p class="texto">Ação de aproximação ou distanciamento dequem está com a bola, de forma que
-                  possapermitir passar a bola com segurança,velocidade e dar ritmo de jogo (dentro docentro de jogo)</p>
+                <p class="texto">Ação de aproximação ou distanciamento de quem está com a bola, de forma que
+                  possa permitir passar a bola com segurança,velocidade e dar ritmo de jogo (dentro do centro de jogo)
+                </p>
               </div>
             </div>
 
@@ -508,7 +538,8 @@
               <div class="metodologia__painel">
                 <img class="metodologia__ilustracao" src="./assets/img/metodologia/espaco-com-bola.jpg"
                   alt="Ilustração do espaço com bola em um jogo de futebol">
-                <p class="texto">Ação de movimentação com a bola emdireção à linha lateral ou ao próprio gol, paraganhar
+                <p class="texto">Ação de movimentação com a bola em direção à linha lateral ou ao próprio gol, para
+                  ganhar
                   espaço e tempo para dar sequência ao jogo</p>
               </div>
             </div>
@@ -520,7 +551,7 @@
                 <img class="metodologia__ilustracao" src="./assets/img/metodologia/espaco-sem-bola.jpg"
                   alt="Ilustração do espaço sem bola em um jogo de futebol">
                 <p class="texto">Ação de movimentação à frente da linha da bola e antes da última linha defensiva (fora
-                  do centro de jogo) de forma a permitir um passemais longo e em profundidade</p>
+                  do centro de jogo) de forma a permitir um passe mais longo e em profundidade</p>
               </div>
             </div>
 
@@ -540,7 +571,8 @@
               <div class="metodologia__painel">
                 <img class="metodologia__ilustracao" src="./assets/img/metodologia/unidade-ofensiva.jpg"
                   alt="Ilustração de uma unidade ofensiva em um jogo de futebol">
-                <p class="texto">Ação de organização das linhas de ataquemantendo a unidade da equipe e permitindo jogar
+                <p class="texto">Ação de organização das linhas de ataque mantendo a unidade da equipe e permitindo
+                  jogar
                   mais coletivamente</p>
               </div>
             </div>
@@ -555,7 +587,7 @@
               <div class="metodologia__painel">
                 <img class="metodologia__ilustracao" src="./assets/img/metodologia/contencao.jpg"
                   alt="Ilustração de uma contenção em um jogo de futebol">
-                <p class="texto">Ação que visa retardar diretamente as açõesde quem está com a bola em direção ao gol
+                <p class="texto">Ação que visa retardar diretamente as ações de quem está com a bola em direção ao gol
                 </p>
               </div>
             </div>
@@ -577,8 +609,8 @@
               <div class="metodologia__painel">
                 <img class="metodologia__ilustracao" src="./assets/img/metodologia/equilibrio-de-recuperacao.jpg"
                   alt="Ilustração do equilíbrio de recuperação em um jogo de futebol">
-                <p class="texto">Ação de movimentar próximo e atrás da linhada bola, através de pressão em quem estácom
-                  a bola, para recuperação da posse oucobertura de eventuais linhas de passe atrásda linha da bola</p>
+                <p class="texto">Ação de movimentar próximo e atrás da linhada bola, através de pressão em quem está com
+                  a bola, para recuperação da posse ou cobertura de eventuais linhas de passe atrás da linha da bola</p>
               </div>
             </div>
 
@@ -588,8 +620,8 @@
               <div class="metodologia__painel">
                 <img class="metodologia__ilustracao" src="./assets/img/metodologia/equilibrio-defensivo.jpg"
                   alt="Ilustração do equilíbrio defensivo em um jogo de futebol">
-                <p class="texto">Ação de movimentar em zonas do campo edar estabilidade defensiva à equipe
-                  (permitirmelhor equilíbrio defensivo)</p>
+                <p class="texto">Ação de movimentar em zonas do campo e dar estabilidade defensiva à equipe
+                  (permitir melhor equilíbrio defensivo)</p>
               </div>
             </div>
 
@@ -645,7 +677,7 @@
               <i class="pesquisa__icone icone pesquisa__icone--ufv"></i>
             </div>
             <p class="primeiro pesquisa__texto texto">O NUPEF – Núcleo de Pesquisas e Estudos em Futebol da Universidade
-              Federal de Viçosa – é a parceira oficial da TacticUP. Nosso contrato de cooperação técnica garante
+              Federal de Viçosa – é o parceiro oficial da TacticUP. Nosso contrato de cooperação técnica garante
               transferência de conhecimento e evolução constante da metodologia científica.</p>
             <p class="pesquisa__texto texto">Veja os artigos científicos publicados sobre a metodologia científica em <a
                 class="pesquisa__link" href="https://www.nucleofutebol.ufv.br">www.nucleofutebol.ufv.br</a></p>
@@ -683,7 +715,7 @@
             <i class="equipe__foto equipe__foto--2"></i>
             <div>
               <h4 class="equipe__nome">Guilherme Machado</h4>
-              <p class="equipe__sobre texto">Mestre em Educação Física pela UFV, com experiência como treinador e
+              <p class="equipe__sobre texto">Doutorando em Educação Física pela UFV, com experiência como treinador e
                 coordenador em escolas e clubes de futebol no Brasil e exterior</p>
             </div>
           </li>
@@ -753,9 +785,15 @@
         <p class="rodape__titulo texto">Contato</p>
         <a class="rodape__link primeiro texto" href="mailto:contato@tacticup.com.br">contato@tacticup.com.br</a>
         <div class="rodape__redes-sociais">
-          <img class="rodape__rede-social" src="./assets/img/redes-sociais/facebook.svg" alt="Facebook">
-          <img class="rodape__rede-social" src="./assets/img/redes-sociais/youtube.svg" alt="Youtube">
-          <img class="rodape__rede-social" src="./assets/img/redes-sociais/instagram.svg" alt="Instagram">
+          <a href="https://www.facebook.com/TacticUP" target="_blank">
+            <img class="rodape__rede-social" src="./assets/img/redes-sociais/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://www.youtube.com/channel/UCu_8IPqUylXL32T4_Uk60ag" target="blank">
+            <img class="rodape__rede-social" src="./assets/img/redes-sociais/youtube.svg" alt="Youtube">
+          </a>
+          <a href="https://www.instagram.com/tacticup/" target="_blank">
+            <img class="rodape__rede-social" src="./assets/img/redes-sociais/instagram.svg" alt="Instagram">
+          </a>
         </div>
       </nav>
       <nav class="rodape__nav">
@@ -781,7 +819,10 @@
     rel="stylesheet">
   <script src="assets/js/cabecalho.js"></script>
   <script src="assets/js/parceiros.js"></script>
+  <script src="assets/js/abas.js"></script>
+  <script src="assets/js/sobre.js"></script>
   <script src="assets/js/dropdown.js"></script>
+  <script src="assets/js/debounce.js"></script>
   <script src="assets/js/para-quem.js"></script>
   <script src="assets/js/tutorial.js"></script>
   <script src="assets/js/acordeao.js"></script>

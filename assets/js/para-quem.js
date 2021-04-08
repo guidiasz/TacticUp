@@ -56,12 +56,13 @@ function addEventoBotoes() {
 
 }
 
-window.addEventListener("resize", function (event) {
+window.addEventListener("resize", debounce(function (event) {
+  console.log('resize')
   setPosicaoItens();
   resetScroll();
   desativaBotao();
   paraQuemBotoes[0].classList.toggle('ativo')
-})
+}, 500))
 
 const paraQuem = document.querySelector('.para-quem');
 
