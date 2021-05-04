@@ -57,7 +57,6 @@ function addEventoBotoes() {
 }
 
 window.addEventListener("resize", debounce(function (event) {
-  console.log('resize')
   setPosicaoItens();
   resetScroll();
   desativaBotao();

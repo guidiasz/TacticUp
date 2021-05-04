@@ -31,6 +31,7 @@
   text-align: center;
   line-height: 1.2;
   max-width: 520px;
+  font-family: apple color emoji, segoe ui emoji, noto color emoji, android emoji, emojisymbols, emojione mozilla, twemoji mozilla, segoe ui symbol;
 }
 
 @media (min-width: 1024px) {

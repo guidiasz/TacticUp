@@ -5,7 +5,6 @@ const parceiros = listaParceiros.querySelectorAll('.parceiros__item');
 const tamanhoTela = window.matchMedia('(min-width: 700px)');
 
 function setLarguraParceiros() {
-  console.log('chamou');
   let larguraTotal = 0;
   let i = 0;
   const qtddParceiros = parceiros.length / 2;

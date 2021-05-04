@@ -82,6 +82,7 @@
 
 .metodologia__ilustracao {
   margin-bottom: .5rem;
+  height: auto;
 }
 
 .metodologia__painel p.texto:last-child  {
