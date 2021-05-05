@@ -1,3 +1,4 @@
+Feito em 180 horas (23 dias de trabalho).
 ## Antes
 ![Performance da versão antiga do site](https://i.imgur.com/5UG6uLE.png)
 ## Depois
